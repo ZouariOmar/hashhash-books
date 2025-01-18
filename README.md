@@ -16,7 +16,7 @@
   <br>
 </h1>
 
-<h4 align="center">A curated collection of programming books 📚</h4>
+<h4 align="center">A curated collection of programming books 📚 and Notes 📝 </h4>
 
 <!-- PROJECT LINKS -->
 <p align="center">
@@ -43,13 +43,13 @@
 
 ## 📚 HashHashBooks
 
-Welcome to **HashHashBooks**, a curated collection of programming books to help developers of all levels master coding concepts, improve their skills, and stay updated with the latest technologies.
+Welcome to **HashHashBooks**, a curated collection of programming books and notes to help developers of all levels master coding concepts, improve their skills, and stay updated with the latest technologies.
 
 ## 🚀 About the Project
 
 HashHashBooks serves as a resource hub that:
 
-- Offers high-quality programming books across diverse topics.
+- Offers high-quality programming books and notes across diverse topics.
 - Covers popular programming languages, frameworks, algorithms, and more.
 - Helps both beginners and experienced developers on their learning journeys.
 
@@ -74,7 +74,7 @@ The repository includes books on:
    git clone https://github.com/ZouariOmar/HashHashBooks.git
    ```
 
-2. Browse the folders to find books of interest.
+2. Browse the folders to find books/notes of interest.
 3. Start learning and enjoy the journey!
 
 ## 🤝 Contributions
@@ -97,7 +97,7 @@ Contributions are welcome to expand and improve the repository! Here's how you c
 4. **Commit your changes**:
 
    ```bash
-   git commit -m "Add [Book Name] to [Category]"
+   git commit -m "Add [Book Name | Note Name] to [Category]"
    ```
 
 5. **Push** your branch:
