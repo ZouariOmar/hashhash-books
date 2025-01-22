@@ -1,4 +1,4 @@
-# Setting Up Oracle Database with Docker and Connecting via C++
+﻿# Setting Up Oracle Database with Docker and Connecting via C++
 
 This guide provides instructions to set up Oracle Database locally using Docker, troubleshoot common issues like credential storage, and connect it to a C++ application.
 
@@ -52,7 +52,9 @@ Follow the troubleshooting steps in the "Fixing Credential Storage Issues" secti
 
 2. Run the container:
    ```bash
-   docker run -d -p 1521:1521 -p 5500:5500 --name oracle-xe container-registry.oracle.com/database/express:latest
+   docker run -d -p 1521:1521 -p 5500:5500 --name oracle-xe \
+   -e ORACLE_PWD=your_password \
+   container-registry.oracle.com/database/express:latest
    ```
 
 ---
@@ -216,6 +218,13 @@ docker logout container-registry.oracle.com
 - Verify connection details (username, password, and service name).
 - Check network settings (e.g., `localhost:1521` is accessible).
 
+## **Stop all proccess**
+- docker stop oracle-db           # Stop the container
+- docker rm oracle-db             # Remove the container
+- docker rmi myusername/oracle-db:latest  # (Optional) Remove the image
+- docker container prune          # (Optional) Remove all stopped containers
+- docker system prune -a          # (Optional) Clean up unused Docker resources
+- sudo docker logs oracle-db      # ORACLE PASSWORD FOR SYS AND SYSTEM: <random_password>
 ---
 
 By following these steps, you can set up Oracle Database with Docker, resolve credential storage issues, and connect your C++ application to the database.
