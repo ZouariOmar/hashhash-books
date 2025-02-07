@@ -14,6 +14,11 @@
 
 ## Others
 
+### **Oracle/C++**
+
+- [Introduction to OCCI](https://docs.oracle.com/en/database/oracle/oracle-database/19/lncpp/introduction-to-occi.html#GUID-99077609-BFCC-4FF7-9D23-C45623DDD465)
+- [Install oracle-xe on arch](https://gist.github.com/davidmaignan/d0d941cbf761678457b865e6de041af0)
+
 ### **C++ Preprocessor**
 
 - https://www.geeksforgeeks.org/cc-preprocessors
