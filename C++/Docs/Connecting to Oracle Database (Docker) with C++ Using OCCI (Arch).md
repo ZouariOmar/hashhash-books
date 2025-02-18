@@ -212,6 +212,9 @@ Current Date: 07-FEB-2025
 
      ```sql
      ALTER USER myapp QUOTA UNLIMITED ON USERS;
+     GRANT CREATE SESSION TO myapp;
+     GRANT CONNECT TO myapp;
+     GRANT DBA TO myapp;
      ```
 
   3. Exit SQL\*Plus and re-run your application.
@@ -257,6 +260,7 @@ Current Date: 07-FEB-2025
     ```
 
   - **Option 2: Disable `credsStore`**
+
     - Open Docker's configuration file:
 
     ```bash

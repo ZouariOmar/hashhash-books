@@ -1,4 +1,4 @@
-## General
+﻿## General
 
 - [How to Remove Duplicates from a Vector in C++?](https://www.geeksforgeeks.org/remove-duplicates-from-vector-in-cpp/?itm_source=auth&itm_medium=saved&itm_campaign=articles)
 - [std::unique in C++](https://www.geeksforgeeks.org/stdunique-in-cpp/)
@@ -77,4 +77,4 @@
 
 - [C++ mutable keyword](https://www.geeksforgeeks.org/c-mutable-keyword)
 - [C++ this keyword](https://www.udemy.com/course/learn-cpp-programming-beginner-to-advanced/learn/lecture/33881640#overview)
--
+- [What is the Explicit keyword in C++?](https://www.scaler.com/topics/cpp-explicit/)
