@@ -78,3 +78,7 @@
 - [C++ mutable keyword](https://www.geeksforgeeks.org/c-mutable-keyword)
 - [C++ this keyword](https://www.udemy.com/course/learn-cpp-programming-beginner-to-advanced/learn/lecture/33881640#overview)
 - [What is the Explicit keyword in C++?](https://www.scaler.com/topics/cpp-explicit/)
+
+### **C++ Algorithm**
+
+- [upper_bound-in-cpp](https://www.geeksforgeeks.org/upper_bound-in-cpp)
