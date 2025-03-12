@@ -50,6 +50,8 @@
 - [Different Methods to Reverse a String in C++](https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods)
 - [std::transform() in C++ STL (Perform an operation on all elements)](https://www.geeksforgeeks.org/transform-c-stl-perform-operation-elements)
 - [C++ Overloading (Operator and Function)](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm)
+- [std::lower_bound in C++](https://www.geeksforgeeks.org/lower_bound-in-cpp)
+- [upper_bound() in C++](https://www.geeksforgeeks.org/upper_bound-in-cpp)
 
 ### **C++ Inheritance**
 
