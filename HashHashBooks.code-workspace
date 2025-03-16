@@ -7,6 +7,9 @@
 	"settings": {
 		"files.associations": {
 			"string": "cpp"
-		}
+		},
+		"conventionalCommits.scopes": [
+			"Docker"
+		]
 	}
 }
