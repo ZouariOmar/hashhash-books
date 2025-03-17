@@ -9,7 +9,8 @@
 			"string": "cpp"
 		},
 		"conventionalCommits.scopes": [
-			"Docker"
+			"Docker",
+			"TechForEveryone"
 		]
 	}
 }
