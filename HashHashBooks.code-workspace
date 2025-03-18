@@ -10,7 +10,8 @@
 		},
 		"conventionalCommits.scopes": [
 			"Docker",
-			"TechForEveryone"
+			"TechForEveryone",
+			"Linux"
 		]
 	}
 }
