@@ -1,4 +1,4 @@
-﻿## General
+## General
 
 - [How to Remove Duplicates from a Vector in C++?](https://www.geeksforgeeks.org/remove-duplicates-from-vector-in-cpp/?itm_source=auth&itm_medium=saved&itm_campaign=articles)
 - [std::unique in C++](https://www.geeksforgeeks.org/stdunique-in-cpp/)
@@ -52,6 +52,7 @@
 - [C++ Overloading (Operator and Function)](https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm)
 - [std::lower_bound in C++](https://www.geeksforgeeks.org/lower_bound-in-cpp)
 - [upper_bound() in C++](https://www.geeksforgeeks.org/upper_bound-in-cpp)
+- [std::optional](https://builtin.com/articles/stdoptional)
 
 ### **C++ Inheritance**
 
