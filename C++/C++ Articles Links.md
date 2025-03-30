@@ -53,6 +53,7 @@
 - [std::lower_bound in C++](https://www.geeksforgeeks.org/lower_bound-in-cpp)
 - [upper_bound() in C++](https://www.geeksforgeeks.org/upper_bound-in-cpp)
 - [std::optional](https://builtin.com/articles/stdoptional)
+- [std::popcount](https://en.cppreference.com/w/cpp/numeric/popcount)
 
 ### **C++ Inheritance**
 
