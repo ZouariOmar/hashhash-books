@@ -86,3 +86,7 @@
 ### **C++ Algorithm**
 
 - [upper_bound-in-cpp](https://www.geeksforgeeks.org/upper_bound-in-cpp)
+
+### **C++ Math**
+
+- [std::cbrt, std::cbrtf, std::cbrtl](https://en.cppreference.com/w/cpp/numeric/math/cbrt)
