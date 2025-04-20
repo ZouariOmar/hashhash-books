@@ -1,0 +1,89 @@
+# Git Commit Best Practices - How to Write Meaningful Commits
+
+The purpose of this gist is to gather the best practices for using git in one convenient location and to educate more people about the standards. Especially when collaborating with others, it is essential to establish conventions to follow.
+
+## Commit Message norms
+
+### 1. Make clean, single-purpose commits
+
+A commit should be a wrapper for related changes. For example, fixing two different bugs should produce two separate commits. It is better to keep commits as small and focused as possible for many reasons, some of them include:
+
+- It makes it easier for other developers in the team and reviewers to understand the changes, making code reviews more efficient
+- If the commit has to be rolled back completely, it's far easier to do so
+- It helps you parse changes you've made using the git log
+
+### 2. Commit early, commit often
+
+I suggest working in smaller portions and frequently committing to your progress instead of striving for perfection. This approach is particularly beneficial when working on a feature branch that may take a while to complete as it ensures that your code remains up-to-date and minimizes potential conflicts.
+
+### 3. Write meaningful commit messages
+
+I'd like to remind you that writing informative and detailed commit messages that give a brief overview of the changes made within a commit is essential for the convenience of others and your own future reference. It's important to consider that your team members must comprehend the message and precisely what changes you have made.
+
+### Here are more helpful tips to keep in mind:
+
+- Use the imperative, present tense: "change" not "changed" nor "changes" for your commit message (written in lower case)
+- Use the body to explain what and why the change was made. This part should be added only when necessary
+- Keep it brief, wrap the subject line at 50 characters and the body at 72 characters
+- Add an empty line underneath the commit message, and begin writing the body (description)
+- Do not end the commit message(subject line) with a period
+- Remove unnecessary punctuation marks
+
+
+#### Format of the commit message:
+
+```
+<type>(<optional scope>): <subject>
+<BLANK LINE>
+<optional body>
+<BLANK LINE>
+<optional footer(s)>
+```
+  
+```
+feat: add foo support
+^--^  ^------------^
+|     |
+|     +-> Summary(commit message subject line) in present tense
+|
++-------> Type: chore, docs, feat, fix, refac, style, or test
+```
+
+"type" must be one of the following:
+
+- `feat`: new feature for the user, not a new feature for a build script
+- `fix`: bug fix for the user, not a fix to a build script
+- `docs`: changes to the documentation
+- `style`: formatting, missing semi-colons, etc; no production code change
+- `refactor`: refactoring production code, eg. renaming a variable
+- `test`: adding missing tests, refactoring tests; no production code change
+- `chore`: regular code maintenance and updating grunt tasks etc; no production code change (eg: change to .gitignore file or .prettierrc file)
+- `build`: build-related changes, for updating build configuration, development tools or other changes irrelevant to the user (eg: npm related/ adding external dependencies/ podspec related)
+- `perf`: code change that improves performance
+
+#### Examples:
+
+##### Commit message with body and footer
+
+```
+fix: prevent racing of requests
+
+Introduce a request id and a reference to the latest request. Dismiss
+incoming responses other than from the latest request.
+
+Resolves: #123
+```
+
+##### Commit message with body and no footer
+
+```
+fix: remove string template from client code
+
+It is incompatible with IE
+```
+
+##### Commit message with no body and no footer
+
+```
+docs: prepare CHANGELOG for version x.x.x
+```
