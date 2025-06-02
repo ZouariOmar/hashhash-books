@@ -7,7 +7,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 
 ---
 
-# Notes
+## Notes
 
 - The main difference between C and C++ is that C++ support classes and objects, while C does not.
 - **Note:** It is recommended to use descriptive names in order to create understandable and maintainable code (like: age, sum, totalVolume).
@@ -331,6 +331,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - #### Pass By Reference
 
   - we used normal variables when we passed parameters to a function. You can also pass a [reference](https://www.w3schools.com/cpp/cpp_references.asp) to the function. This can be useful when you need to change the value of the arguments.
+  - _Reference_ refer to an object or a value in memory.
 
 - #### Pass Arrays as Function Parameters
 
@@ -829,4 +830,3 @@ class MyClass {
 # C++ Opnecv
 
 [Opencv](Resources/classcv_1_1face_1_1FaceRecognizer.png)
-
