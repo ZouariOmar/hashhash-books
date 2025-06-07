@@ -12,7 +12,18 @@
 
 ### Java data types
 
+![Data Types in Java]('../res/Data Types in java.png')
+
 - **String** is not primitive data type like `int`, `char`... (because only class can have methods. Primitive can not)
+
+### Java Type Casting
+
+- Type casting is when you assign a value of one primitive data type to another type.
+- In Java, there are two types of casting:
+  - _Widening Casting (automatically)_ - converting a smaller type to a larger type size
+    byte -> short -> char -> int -> long -> float -> double
+  - _Narrowing Casting (manually)_ - converting a larger type to a smaller size type
+    double -> float -> long -> int -> char -> short -> byte
 
 ### Java Interfaces
 
