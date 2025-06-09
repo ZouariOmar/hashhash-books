@@ -48,3 +48,13 @@
   - POJOs are often used to transfer data between different layers of an application.
   - They can be used to represent entities in an application, such as user profiles or product information.
   - POJOs are frequently used in frameworks like Java Persistence API (JPA) for mapping database records to Java objects, or in serialization/deserialization processes for converting objects to and from formats like JSON or XML.
+
+## Autoboxing In java
+
+- **Autoboxing in Java** is the automatic conversion of primitive data types to their corresponding wrapper class objects. Introduced in Java 5, this feature simplifies code by allowing developers to use primitive types and their wrapper class objects interchangeably.
+- Exemple:
+
+```java
+Integer myInteger = 10; // Autoboxing int to Integer
+int myInt = myInteger;  // Unboxing Integer to int
+```
