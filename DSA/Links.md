@@ -11,3 +11,5 @@
 - [Merge Sort – Data Structure and Algorithms Tutorials](https://www.geeksforgeeks.org/merge-sort)
 - [difference-between-unsigned-int-and-signed-int-in-c](https://www.geeksforgeeks.org/difference-between-unsigned-int-and-signed-int-in-c)
 - [unsigned-and-signed-binary-numbers](https://www.tutorialspoint.com/unsigned-and-signed-binary-numbers)
+- [Juggling Algorithm for Array Rotation](https://www.geeksforgeeks.org/dsa/juggling-algorithm-for-array-rotation/)
+- [Reversal algorithm for Array rotation](https://www.geeksforgeeks.org/dsa/program-for-array-rotation-continued-reversal-algorithm)
