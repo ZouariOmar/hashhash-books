@@ -53,3 +53,17 @@
 - How to use sort() and sorted():
   - `list.sort()`: Sorts the list in-place (modifies the original list).
   - `sorted(list)`: Returns a new sorted list without modifying the original list.
+
+## Python Slicing
+
+- The assignment: list_2 = list_1 copies the name of the array, not its contents. In effect, the two names (list_1 and list_2) identify the same location in the computer memory. Modifying one of them affects the other, and vice versa.
+- A slice is an element of Python syntax that _allows you to make a brand new copy of a list, or parts of a list_.
+
+## List comprehension
+
+- List comprehension allows you to create new lists from existing ones in a concise and elegant way. The syntax of a list comprehension looks as follows:
+  `[expression for element in list if conditional]`
+  which is actually an equivalent of the following code:
+  `for element in list:
+  if conditional:
+      expression`

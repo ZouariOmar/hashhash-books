@@ -14,3 +14,4 @@
 - [Juggling Algorithm for Array Rotation](https://www.geeksforgeeks.org/dsa/juggling-algorithm-for-array-rotation/)
 - [Reversal algorithm for Array rotation](https://www.geeksforgeeks.org/dsa/program-for-array-rotation-continued-reversal-algorithm)
 - [Bubble Sort Algorithm](https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm)
+- [Sort an array of 0s, 1s and 2s - Dutch National Flag Problem](https://www.geeksforgeeks.org/dsa/sort-an-array-of-0s-1s-and-2s)

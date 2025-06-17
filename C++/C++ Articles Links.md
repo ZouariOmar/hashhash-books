@@ -21,8 +21,8 @@
 
 ### **C++ Preprocessor**
 
-- https://www.geeksforgeeks.org/cc-preprocessors
-- https://www.tutorialspoint.com/cplusplus/cpp_preprocessor.htm
+- <https://www.geeksforgeeks.org/cc-preprocessors>
+- <https://www.tutorialspoint.com/cplusplus/cpp_preprocessor.htm>
 - [C++ Preprocessors and Macros](https://www.programiz.com/cpp-programming/preprocessor-macros)
 
 ### **C++ Pointer**
@@ -90,3 +90,7 @@
 ### **C++ Math**
 
 - [std::cbrt, std::cbrtf, std::cbrtl](https://en.cppreference.com/w/cpp/numeric/math/cbrt)
+
+### C++ && LLM
+
+- [MBASE SDK Documentation](https://docs.mbasesoftware.com/index.html) \*
