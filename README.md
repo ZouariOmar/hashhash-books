@@ -127,7 +127,3 @@ For questions or suggestions, feel free to reach out:
 ---
 
 **Happy Learning!**
-
-```*
-This compact version includes all essential details, formatted for a single README file. Let me know if you'd like to modify or add anything!
-```
