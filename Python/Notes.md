@@ -65,5 +65,31 @@
   `[expression for element in list if conditional]`
   which is actually an equivalent of the following code:
   `for element in list:
-  if conditional:
-      expression`
+if conditional:
+    expression`
+
+## Functions
+
+### How functions work
+
+![How functions work]('imgs/How functions work.png')
+
+- when you invoke a function, Python remembers the place where it happened and jumps into the invoked function;
+- the body of the function is then executed;
+- reaching the end of the function forces Python to return to the place directly after the point of invocation.
+
+### SUMMARY
+
+- A function is a block of code that performs a specific task when the function is called (invoked). You can use functions to make your code reusable, better organized, and more readable. Functions can have parameters and return values.
+
+- There are at least four basic types of functions in Python:
+  - built-in functions which are an integral part of Python (such as the print() function). You can see a complete list of built-in Python functions at <https://docs.python.org/3/library/functions.html>.
+  - the ones that come from pre-installed modules (you'll learn about them in the Python Essentials 2 course)
+  - user-defined functions which are written by users for users ‒ you can write your own functions and use them freely in your code,
+  - the lambda functions (you'll learn about them in the Python Essentials 2 course.)
+- You can define your own function using the def keyword and the following syntax:
+
+```python
+def your_function(optional parameters):
+    # the body of the function
+```
