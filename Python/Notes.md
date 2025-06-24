@@ -93,3 +93,7 @@ if conditional:
 def your_function(optional parameters):
     # the body of the function
 ```
+
+## Pip
+
+- `Pip freeze` is a command in Python that allows you to save packages that were installed using pip in the virtual environment.
