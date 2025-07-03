@@ -41,7 +41,6 @@
 
 - `range(start, stop, step)`: Generates a sequence starting from the `start` value up to (but not including) the `stop` value, with a custom `step` value.
 - Parameters
-
   - `start` (optional): The starting value of the sequence. Defaults to 0 if not specified.
   - `stop` (required): The ending value of the sequence. The sequence will stop before reaching this value.
   - `step` (optional): The increment value between numbers in the sequence. Defaults to 1 if not specified.
@@ -66,9 +65,11 @@
   which is actually an equivalent of the following code:
   `for element in list:
 if conditional:
-    expression`
+  expression`
 
 ## Functions
+
+- if a function doesn't return a certain value using a `return` expression clause, it is assumed that it implicitly returns `None`.
 
 ### How functions work
 

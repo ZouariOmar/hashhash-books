@@ -13,6 +13,7 @@
 - **Apache**: The most widely used web server software. Developed and maintained by Apache Software Foundation, Apache is an open source software available for free.
 - **CVE**: Common Vulnerabilities and Exposures (CVE), this term is given to a publicly disclosed vulnerability
 - **PoC**: A Proof of Concept is often a piece of code or an application that is used to demonstrate an idea or theory is possible. Proof of Concepts are often used to demonstrate vulnerabilities
+- **Linux** is a command line operating system based on unix. There are multiple operating systems that are based on Linux.
 
 ## Search Skills
 
