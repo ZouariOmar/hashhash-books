@@ -1,6 +1,7 @@
 # Cyber Security Notes
 
 - "To outsmart a hacker, you need to think like one.", This is the core of "Offensive Security.
+- Ubuntu Server can run on systems with only 512MB of RAM!
 
 ## Terms
 
@@ -14,6 +15,7 @@
 - **CVE**: Common Vulnerabilities and Exposures (CVE), this term is given to a publicly disclosed vulnerability
 - **PoC**: A Proof of Concept is often a piece of code or an application that is used to demonstrate an idea or theory is possible. Proof of Concepts are often used to demonstrate vulnerabilities
 - **Linux** is a command line operating system based on unix. There are multiple operating systems that are based on Linux.
+- **PoS**: Point of Sale
 
 ## Search Skills
 
