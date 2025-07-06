@@ -54,3 +54,25 @@ return 0;
 - ++i:
   - increment i
   - return i.
+
+## sizeof 'a' and sizeof "a"
+
+```c
+#include <stdio.h>
+int main(void) {
+  printf("sizeof 'a' is %zu\n", sizeof('a'));
+  printf("sizeof \"a\" is %zu\n", sizeof("a"));
+
+  return 0;
+}
+// $ ./sizes
+// sizeof 'a' is 4
+// sizeof "a" is 2
+```
+
+| Expression | Type in C | `sizeof` in C | Type in C++     | `sizeof` in C++ |
+| ---------- | --------- | ------------- | --------------- | --------------- |
+| `'a'`      | `int`     | 4             | `char`          | 1               |
+| `"a"`      | `char[2]` | 2             | `const char[2]` | 2               |
+
+> On most modern systems (e.g., x86_64), int is 4 bytes.
