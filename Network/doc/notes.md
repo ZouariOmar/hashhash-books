@@ -16,6 +16,7 @@
 - **MAC Addresses**: Devices on a network will all have a physical network interface, which is a microchip board found on the device's motherboard. This network interface is assigned a unique address at the factory it was built at, called a MAC (Media Access Control ) address. The MAC address is a twelve-character hexadecimal number (a base sixteen numbering system used in computing to represent numbers) split into two's and separated by a colon. These colons are considered separators.
 - **Ping** is one of the most fundamental network tools available to us. Ping uses _ICMP_ (Internet Control Message Protocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
 - **8.8.8.8** is the primary _IP address for Google's public DNS_. It's a commonly used public DNS server that helps users resolve domain names to IP addresses. You can configure your device's network settings to use 8.8.8.8 as your primary DNS server to utilize Google's DNS service
+- **MTU, or Maximum Transmission Unit**, refers to the largest size of data packets that a network interface can transmit without fragmentation. It's a crucial setting in networking, dictating the maximum amount of data that can be sent in a single transmission. MTU is usually associated with the Ethernet protocol, where a _1500-byte packet_ is the largest allowed.
 
 ## What is a DHCP Server?
 
@@ -24,3 +25,28 @@ A DHCP (Dynamic Host Configuration Protocol) server's primary role is to automat
 ## What is a DNS Server?
 
 A DNS (Domain Name System) server's primary role is to translate human-readable domain names (like google.com) into the numerical IP addresses that computers use to locate each other on the internet. It acts like a phonebook for the internet, allowing users to access websites using familiar names instead of complex IP addresses.
+
+## Logging In via SSH
+
+- **Secure Shell (SSH)** refers to a protocol that allows clients to access and execute commands or actions on remote computers. On Linux-based hosts and servers, as well as other Unix-like operating systems, SSH is one of the permanently installed standard tools and is the preferred choice for many administrators to configure and maintain a computer through remote access. It is an older and very proven protocol that does not require or offer a graphical user interface (GUI). For this reason, it works very efficiently and occupies very few resources
+- We can connect to our targets with the following command:
+
+```bash
+ZouariOmar@htb[/htb]$ ssh htb-student@[IP address]
+```
+
+## VPN
+
+- **VPN (Virtual Private Network)** creates a secure, encrypted tunnel between your computer and a private network.
+- It allows you to access internal/private resources that are not accessible over the public internet.
+- Private IPs are **not reachable directly** from the internet.
+- VPN provides a **private network gateway** to access machines within that network.
+- Without VPN, your computer cannot route traffic to private IP addresses.
+- Once connected to the VPN, your traffic to private IPs (e.g., `10.129.2.219`) is routed securely through the VPN tunnel.
+- This lets you SSH into the target machine as if you were inside the private network.
+- VPN also encrypts your traffic, protecting your data from eavesdropping.
+- You can use `openvpn` to establish the connection, e.g:
+
+```bash
+sudo openvpn --config academy-regular.ovpn
+```

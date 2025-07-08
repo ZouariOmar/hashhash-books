@@ -98,3 +98,20 @@ def your_function(optional parameters):
 ## Pip
 
 - `Pip freeze` is a command in Python that allows you to save packages that were installed using pip in the virtual environment.
+
+## Python keywords
+
+### The global keyword
+
+- Using this keyword inside a function with the name (or names separated with commas) of a variable (or variables), forces Python to refrain from creating a new variable inside the function ‒ the one accessible from outside will be used instead.
+
+```python
+var = 2
+print(var)    # outputs: | Column1
+def return_var():
+    global var
+    var = 5
+    return var
+print(return_var())    # outputs: 5
+print(var)    # outputs: 5
+```
