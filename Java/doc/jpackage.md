@@ -1,9 +1,5 @@
 # jpackage
 
-## Links
-
-- [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
-
 ## What is jpackage?
 
 ==**jpackage is a command-line tool to create native installers and packages for Java applications.**==

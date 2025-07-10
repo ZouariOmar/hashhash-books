@@ -1,9 +1,5 @@
 # Jar
 
-## Links
-
-- [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
-
 ## What is jar?
 
 JAR (Java Archive) is a platform-independent file format that aggregates many files into one. It's based on the ZIP file format and is used for bundling Java class files, resources, and metadata into a single file for easier distribution and deployment.
