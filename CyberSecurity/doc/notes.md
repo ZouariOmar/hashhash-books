@@ -26,33 +26,6 @@
   - Conduct dynamic analysis of malware samples by observing their activities in a controlled environment
   - Document and report all the findings
 
-## Terms
-
-- **SOC**: Security Operations Center (SOC) is a team of IT security professionals tasked with monitoring, preventing, detecting, investigating, and responding to threats within a company’s network and systems.
-- **DFIR**: Digital Forensics and Incident Response
-- **IPS**: Intrusion Prevention System (IPS) is a device or application that detects and stops intrusions attempts proactively. They are usually deployed in front of the protected asset and block any potential threat from reaching their target.
-- **firewall**: A security tool, hardware or software that is used to filter network traffic by stopping unauthorized incoming and outgoing traffic.
-- **Threat intelligence** collects information to help the company better prepare against potential adversaries.
-- **SIEM**: Security Information and Event Management system that is used to aggregate security information in the form of logs, alerts, artifacts and events into a centralized platform that would allow security analysts to perform near real-time analysis during security monitoring.
-- **Apache**: The most widely used web server software. Developed and maintained by Apache Software Foundation, Apache is an open source software available for free.
-- **CVE**: Common Vulnerabilities and Exposures (CVE), this term is given to a publicly disclosed vulnerability
-- **PoC**: A Proof of Concept is often a piece of code or an application that is used to demonstrate an idea or theory is possible. Proof of Concepts are often used to demonstrate vulnerabilities
-- **Linux** is a command line operating system based on unix. There are multiple operating systems that are based on Linux.
-- **PoS**: Point of Sale
-- **MTTD**: Mean Time to Detect (MTTD) is the average time it takes for an organization to identify a security threat, incident, or a technical problem.
-- **MTTA**: Mean Time to Acknowledge (MTTA) is the average time between the initial alert and the service provider (e.g. SOC L1 analysts) taking action.
-- **MTTR**: Mean Time to Response (MTTR) is the average time between the initial alert and response to it (e.g. malware removal, password reset, or system restore).
-- **static analysis**: The process of analyzing malware without executing it, but in a controlled environment.
-- **dynamic analysis**: The process of analyzing malware by running it in a controlled environment like a sandbox.
-- A **penetration tester's** job role is to test the security of the systems and software within a company - this is achieved through attempts to uncover flaws and vulnerabilities through systemised hacking. Penetration testers exploit these vulnerabilities to evaluate the risk in each instance. The company can then take these insights to rectify issues to prevent a real-world cyberattack.
-  - Conduct tests on computer systems, networks, and web-based applications
-  - Perform security assessments, audits, and analyse policies
-  - Evaluate and report on insights, recommending actions for attack prevention
-- **Red teamers** share similarities to penetration testers, with a more targeted job role. Penetration testers look to uncover many vulnerabilities across systems to keep cyber-defence in good standing, whilst red teamers are enacted to test the company's detection and response capabilities. This job role requires imitating cyber criminals' actions, emulating malicious attacks, retaining access, and avoiding detection. Red team assessments can run for up to a month, typically by a team external to the company. They are often best suited to organisations with mature security programs in place.
-  - Emulate the role of a threat actor to uncover exploitable vulnerabilities, maintain access and avoid detection
-  - Assess organisations' security controls, threat intelligence, and incident response procedures
-  - Evaluate and report on insights, with actionable data for companies to avoid real-world instances
-
 ## Search Skills
 
 - As readers, to evaluate the information. We will mention a few things to consider when evaluating information:
