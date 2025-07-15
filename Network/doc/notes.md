@@ -5,7 +5,7 @@
 
 ## Networking
 
-![../imgs/network.png]
+![Network](../imgs/network.png)
 
 - **Networks** are simply things connected (devices).
 - **The internet**, sometimes simply called the _net_, is a worldwide system of interconnected computer networks and electronic devices that communicate with each other using an established set of protocols.
@@ -13,11 +13,11 @@
 - a network can be one of two types:
   - A private network
   - A public network
-- **IP Addresses**: an IP address (or Internet Protocol) address can be used as a way of identifying a host on a network for a period of time, where that IP address can then be associated with another device without the IP address changing.
-- **MAC Addresses**: Devices on a network will all have a physical network interface, which is a microchip board found on the device's motherboard. This network interface is assigned a unique address at the factory it was built at, called a MAC (Media Access Control ) address. The MAC address is a twelve-character hexadecimal number (a base sixteen numbering system used in computing to represent numbers) split into two's and separated by a colon. These colons are considered separators.
-- **Ping** is one of the most fundamental network tools available to us. Ping uses _ICMP_ (Internet Control Message Protocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
-- **8.8.8.8** is the primary _IP address for Google's public DNS_. It's a commonly used public DNS server that helps users resolve domain names to IP addresses. You can configure your device's network settings to use 8.8.8.8 as your primary DNS server to utilize Google's DNS service
-- **MTU, or Maximum Transmission Unit**, refers to the largest size of data packets that a network interface can transmit without fragmentation. It's a crucial setting in networking, dictating the maximum amount of data that can be sent in a single transmission. MTU is usually associated with the Ethernet protocol, where a _1500-byte packet_ is the largest allowed.
+- In the following network diagram, we have four network segments or subnetworks. Generally speaking, your system would be connected to one of these network segments/subnetworks. A subnetwork, or simply a subnet, has its own IP address range and is connected to a more extensive network via a router. There might be a firewall enforcing security policies depending on each network.
+  ![Subnetworks](../imgs/subnetworks.png)
+- The figure above shows two types of subnets:
+  - Subnets with `/16`, which means that the subnet mask can be written as `255.255.0.0`. This subnet can have around `65 thousand hosts`.
+  - Subnets with `/24`, which indicates that the subnet mask can be expressed as `255.255.255.0`. This subnet can have around `250 hosts`.
 
 ## What is a DHCP Server?
 
@@ -107,3 +107,10 @@ Often websites will need a way of storing information for their users. Webserver
 ## WAF (Web Application Firewall)
 
 A WAF sits between your web request and the web server; its primary purpose is to protect the webserver from hacking or denial of service attacks. It analyses the web requests for common attack techniques, whether the request is from a real browser rather than a bot. It also checks if an excessive amount of web requests are being sent by utilising something called rate limiting, which will only allow a certain amount of requests from an IP per second. If a request is deemed a potential attack, it will be dropped and never sent to the webserver.
+
+## Network segment
+
+- A network segment is a group of computers connected using a _shared medium_.
+- The medium can be the Ethernet _switch_ or _WiFi access point_.
+- In an IP network, a **subnetwork** is usually the equivalent of one or more network segments connected together and configured to _use the same router_.
+- The network segment refers to a _physical connection_, while a subnetwork refers to a _logical connection_.

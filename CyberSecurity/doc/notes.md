@@ -42,12 +42,6 @@
   - **-**: The minus sign allows you to omit search results that contain a particular word or phrase. For example, you might be interested in learning about the pyramids, but you don’t want to view tourism websites; one approach is to search for pyramids -tourism or -tourism pyramids.
   - **filetype::** This search operator is indispensable for finding files instead of web pages. Some of the file types you can search for using Google are Portable Document Format (PDF), Microsoft Word Document (DOC), Microsoft Excel Spreadsheet (XLS), and Microsoft PowerPoint Presentation (PPT). For example, to find cyber security presentations, try searching for filetype:ppt cyber security.
 
-## Tools
-
-- The **ss** command in Linux is a powerful tool for displaying socket statistics. It provides detailed information about network connections, including TCP, UDP, and Unix domain sockets, replacing the older netstat command. ss is faster and offers more filtering and display options than netstat.
-- **Fail2ban** is a security tool designed to protect servers from brute-force attacks and other malicious activities by monitoring log files and banning IP addresses associated with suspicious behavior. It works by analyzing log entries and dynamically updating firewall rules to block connections from offending IP addresses.
-- **ssh-keygen** is a command-line tool used to generate, manage, and convert SSH keys. These keys are used for secure remote access to servers, often replacing password-based logins. The tool creates a public/private key pair, which is essential for passwordless authentication.
-
 ## HTML Injection
 
 - HTML Injection is a vulnerability that occurs when unfiltered user input is displayed on the page. If a website fails to sanitise user input (filter any "malicious" text that a user inputs into a website), and that input is used on the page, an attacker can inject HTML code into a vulnerable website.

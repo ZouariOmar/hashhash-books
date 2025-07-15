@@ -1,0 +1,6 @@
+# CyberSecurity Tools
+
+- The **ss** command in Linux is a powerful tool for displaying socket statistics. It provides detailed information about network connections, including TCP, UDP, and Unix domain sockets, replacing the older netstat command. ss is faster and offers more filtering and display options than netstat.
+- **Fail2ban** is a security tool designed to protect servers from brute-force attacks and other malicious activities by monitoring log files and banning IP addresses associated with suspicious behavior. It works by analyzing log entries and dynamically updating firewall rules to block connections from offending IP addresses.
+- **ssh-keygen** is a command-line tool used to generate, manage, and convert SSH keys. These keys are used for secure remote access to servers, often replacing password-based logins. The tool creates a public/private key pair, which is essential for passwordless authentication.
+- **Ping** is one of the most fundamental network tools available to us. Ping uses _ICMP_ (Internet Control Message Protocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
