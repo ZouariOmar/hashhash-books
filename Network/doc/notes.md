@@ -114,3 +114,17 @@ A WAF sits between your web request and the web server; its primary purpose is t
 - The medium can be the Ethernet _switch_ or _WiFi access point_.
 - In an IP network, a **subnetwork** is usually the equivalent of one or more network segments connected together and configured to _use the same router_.
 - The network segment refers to a _physical connection_, while a subnetwork refers to a _logical connection_.
+
+## TCP/IP Model
+
+![TCP/IP Model](../imgs/tcp-ip-model.png)
+
+> ARP from Link Layer </br>
+> ICMP from Network Layer </br>
+> TCP from Transport Layer </br>
+> UDP from Transport Layer </br>
+
+- ARP has one purpose: sending a frame to the broadcast address on the network segment and asking the computer with a specific IP address to respond by providing its MAC (hardware) address.
+- ICMP has [many types](https://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml). ICMP ping uses Type 8 (Echo) and Type 0 (Echo Reply).
+- If you want to ping a system on the same subnet, an ARP query should precede the ICMP Echo.
+- Although TCP and UDP are transport layers, for network scanning purposes, a scanner can send a specially-crafted packet to common TCP or UDP ports to check whether the target will respond. This method is efficient, especially when ICMP Echo is blocked.
