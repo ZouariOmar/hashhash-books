@@ -13,6 +13,7 @@
 - [Autoboxing and Unboxing in Java](https://www.geeksforgeeks.org/autoboxing-unboxing-java)
 - [java.util.concurrent.atomic](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html)
 - [AtomicInteger](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
+- [ListIterator in Java](https://www.geeksforgeeks.org/java/listiterator-in-java)
 
 ### Java IO Links
 
