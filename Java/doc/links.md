@@ -14,9 +14,14 @@
 - [java.util.concurrent.atomic](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html)
 - [AtomicInteger](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
 - [ListIterator in Java](https://www.geeksforgeeks.org/java/listiterator-in-java)
+- [ArrayList vs LinkedList](https://www.geeksforgeeks.org/java/arraylist-vs-linkedlist-java/)
 
 ### Java IO Links
 
 - [Java.io Package in Java](https://www.geeksforgeeks.org/java-io-packag)
 - [Package java.io](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html)
 - [Understanding the Main Java I/O Concepts](https://dev.java/learn/java-io/intro)
+
+## Java Streams
+
+- [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
