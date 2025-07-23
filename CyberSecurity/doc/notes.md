@@ -25,6 +25,7 @@
   - Carry out static analysis of malicious programs, which entails reverse-engineering
   - Conduct dynamic analysis of malware samples by observing their activities in a controlled environment
   - Document and report all the findings
+- A **supply chain attack** is a cyberattack that exploits vulnerabilities in a `third-party provider's systems` to gain access to a target organization's systems or data. Instead of directly attacking the target, the attacker compromises a trusted vendor or partner, using their access to infiltrate the target. These attacks can have a wide-ranging impact, affecting multiple organizations connected through the supply chain. (e.g nvim/plugins in a server)
 
 ## Search Skills
 
