@@ -4,6 +4,7 @@
 - [Compiling Java \*.class Files with javac](https://www.baeldung.com/javac)
 - [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
 - [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
+- [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
 ## Java Built-in Packages Links
 

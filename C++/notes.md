@@ -1,13 +1,4 @@
-# Qestions ?
-
-## What is a Size of a Pointer in C ?
-
-The size of a pointer in C can differ based on factors like CPU architecture and the operating system of a computer. Usually, ==the size of a pointer is 4 bytes== on a 32-bit computer system, and on a 64-bit computer system, the pointer size is 8 bytes.
-==It is common to all data types== like int _, float_ etc.
-
----
-
-## Notes
+# Notes
 
 - The main difference between C and C++ is that C++ support classes and objects, while C does not.
 - **Note:** It is recommended to use descriptive names in order to create understandable and maintainable code (like: age, sum, totalVolume).
@@ -19,7 +10,6 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - A #HashMap is a data structure in which the elements are stored in key-value pairs such that every key is mapped to a value using a hash function. In C++, hash maps are implemented using the unordered_map container class. (more info from [her](https://www.geeksforgeeks.org/how-to-use-hashmap-in-cpp))
 - The #NULL value represents the intentional absence of any object value. It is one of JavaScript's [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) and is treated as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for boolean operations.
 - There is 2 types of memory allocation:
-
   - Static memory allocation.
   - Dynamic memory allocation:
 
@@ -31,9 +21,24 @@ The size of a pointer in C can differ based on factors like CPU architecture and
     delete[] P;  // Deallocate P
     ```
 
----
+## C++ && Testing
 
-### Functions
+- **If you want to make a combustible tests you can use this trick:**
+
+  ```cpp
+  int main(int argc, char const *argv[]) {
+  #ifndef __TEST__
+   freopen("../doc/input", "r", stdin);
+   freopen("../out/output", "w", stdout);
+  #endif  // __TEST__
+   return 0;
+  }
+  ```
+
+- In C++, when you access an element in a `std::unordered_map` (or `std::map`) using the `[]` operator, if the key does not already exist, it will be inserted with a default value. For integers, the default value is `0`.
+- Other way to test your program is by including **[C++ Assert](https://www.programiz.com/cpp-programming/assertions)** (`#include <cassert>`) or using [gtest](http://google.github.io/googletest) tool
+
+## Functions
 
 - `lower_bound()` [lower_bound in C++](https://www.geeksforgeeks.org/lower_bound-in-cpp)
 - `sscanf()` [Convert String to int in C++](https://www.geeksforgeeks.org/convert-string-to-int-in-cpp)
@@ -43,12 +48,12 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 
 - `#include <iostream>` is a **header file library** that lets us work with input and output objects, such as `cout` (used in line 5). Header files add functionality to C++ programs.
 - `using namespace std` means that we can use names for objects and variables from the standard library.
-- `cout` (pronounced "see-out") is an **object** used together with the _insertion operator_ (`<<`) to output/print text.
+- `cout` (pronounced "see-out") is an **object** used together with the *insertion operator* (`<<`) to output/print text.
 - `cin` (pronounced "see-in") is a predefined variable that reads data from the keyboard with the extraction operator (`>>`).
 
 ---
 
-### C++ Data Types
+## C++ Data Types
 
 - In C++, there are different **types** of variables (defined with different keywords), for example:
   - `int` - stores integers (whole numbers), without decimals, such as 123 or -123
@@ -66,7 +71,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - A boolean data type is declared with the `bool` keyword and can only take the values `true` or `false`. When the value is returned, `true` = `1` and `false` = `0`.
   ![[Pasted image 20240603113426.png]]
 
-### C++ Operators
+## C++ Operators
 
 - C++ divides the operators into the following groups:
   - [Arithmetic operators](https://www.w3schools.com/cpp/cpp_operators.asp#arithmetic)
@@ -113,14 +118,13 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 
 ---
 
-### C++ String
+## C++ String
 
 - The `+` operator can be used between strings to add them together to make a new string. This is called **concatenation**.
 - A string in C++ is actually an object, which contain functions that can perform certain operations on strings. For example, you can also concatenate strings with the `append()` function.
   ? Visit this site for more string functions: [her](https://www.w3schools.com/cpp/cpp_ref_string.asp)
 - ! ==C++ uses the `+` operator for both **addition** and **concatenation**==. Numbers are added. Strings are concatenated.
 - To get the length of a string, use the `length()` function.
-
   - **Tip:** You might see some C++ programs that use the `size()` function to get the length of a string. This is just an alias of `length()`. It is completely up to you if you want to use `length()` or `size()`.
 
 - The `<string>` library also has an `at()` function that can be used to access characters in a string (same as referring to string index number inside square brackets `[]`).
@@ -136,22 +140,16 @@ The size of a pointer in C can differ based on factors like CPU architecture and
   - **Note:** It is more convenient to work with the standard `string` type, rather than C-style strings. However, one reason some users continue to use C-style strings is that they have access to functions from the C standard library.
   - A list of all C-style string functions, can be found in our [CString Functions Reference](https://www.w3schools.com/cpp/cpp_ref_cstring.asp).
 
----
-
-### C++ Math
+## C++ Math
 
 - For a complete reference of Math functions, go to our [C++ Math Reference](https://www.w3schools.com/cpp/cpp_ref_math.asp).
 - C++ has many functions that allows you to perform mathematical tasks on numbers such as `min(int, int)`, `max(int, int)`functions. Other functions, such as `sqrt` (square root), `round` (rounds a number) and `log` (natural logarithm), can be found in the `<cmath>` header file.
 
----
-
-### C++ Booleans
+## C++ Booleans
 
 - For this, C++ has a `bool` data type, which can take the values `true` (1) or `false` (0).
 - A boolean variable is declared with the `bool` keyword and can only take the values `true` or `false`.
 - A **Boolean expression** returns a boolean value that is either `1` (true) or `0` (false). This is useful to build logic, and find answers. You can use a [comparison operator](https://www.w3schools.com/cpp/cpp_operators_comparison.asp), such as the **greater than** (`>`) operator, to find out if an expression (or variable) is true or false.
-
----
 
 ## C++ Conditions statements
 
@@ -165,8 +163,6 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - [When to Use Ternary Over If-Else](https://codedamn.com/news/c/ternary-operators-in-c#:~:text=When%20to%20Use,introduce%20unnecessary%20complexity.)
 - A **break** can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.
 
----
-
 ## C++ Loops
 
 - Loops can execute a block of code as long as a specified condition is reached.
@@ -178,23 +174,20 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - The `do/while` loop is a variant of the `while` loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is **true**:
   `do {`  
    `_// code block to be executed_
-`} while (_condition_);`
+`} while (*condition*);`
 - **Note:** Do not forget to increase the variable used in the **while** condition, otherwise the loop will never end.
 - When you know exactly how many times you want to loop through a block of code, use the `for` loop instead of a `while` loop:
-
-  - ### Syntax
+  - Syntax
 
     `for (_statement 1_; _statement 2_; _statement 3_) {`  
       `_// code block to be executed_`  
-    `}`
-
-  - **Statement 1** is executed (one time) before the execution of the code block.
-  - **Statement 2** defines the condition for executing the code block.
-  - **Statement 3** is executed (every time) after the code block has been executed.
+     `}`
+    - **Statement 1** is executed (one time) before the execution of the code block.
+    - **Statement 2** defines the condition for executing the code block.
+    - **Statement 3** is executed (every time) after the code block has been executed.
 
 - It is also possible to place a loop inside another loop. This is called a **nested loop**:
-
-  - ### Example
+  - Example
 
     `// Outer loop`
     `for (int i = 1; i <= 2; ++i) {`
@@ -206,8 +199,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
     `}`
 
 - There is also a "**for-each** loop" (introduced in C++ version 11 (2011), which is used exclusively to loop through elements in an [array](https://www.w3schools.com/cpp/cpp_arrays.asp) (or other data sets):
-
-  - ### Syntax
+  - Syntax
 
     ```cpp
     for (_type variableName_ : _arrayName_) {
@@ -215,7 +207,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
     }
     ```
 
-  - ### Example
+  - Example
 
     ```cpp
     int myNumbers[5] = {10, 20, 30, 40, 50};
@@ -226,8 +218,6 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - The `break` statement can also be used to jump out of a **loop**.
 - The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
----
-
 ## C++ Arrays
 
 - Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
@@ -236,14 +226,10 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - To get the size of an array, you can use the `sizeof()` operator.
 - A **multi-dimensional** array is an array of arrays.
 
----
-
 ## C++ Structures
 
 - Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a **member** of the structure. Unlike an [array](https://www.w3schools.com/cpp/cpp_arrays.asp), a structure can contain many different data types (int, string, bool, etc.). To create a structure, use the `struct` keyword and declare each of its members inside curly braces.
 - By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time. To create a named structure, put the name of the structure right after the `struct` keyword.
-
----
 
 ## C++ Enums
 
@@ -255,24 +241,19 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - As you know, the first item of an enum has the value 0. The second has the value 1, and so on. To make more sense of the values, you can easily change them ([example](https://www.w3schools.com/cpp/cpp_enum.asp#:~:text=enum%20Level%20%7B%0A%C2%A0%20LOW%20%3D%2025%2C%0A%C2%A0%20MEDIUM%20%3D%2050%2C%0A%C2%A0%20HIGH%20%3D%2075%0A%7D%3B)).
 - Note that if you assign a value to one specific item, the next items will update their numbers accordingly ([example](https://www.w3schools.com/cpp/cpp_enum.asp#:~:text=enum%20Level%20%7B%0A%C2%A0%20LOW%20%3D%205%2C%0A%C2%A0%20MEDIUM%2C%C2%A0//%20Now%206%0A%C2%A0%20HIGH%C2%A0//%20Now%207%0A%7D%3B)).
 
-- #### Why And When To Use Enums?
+- Why And When To Use Enums?
 
   Enums are used to give names to constants, which makes the code easier to read and maintain.
   Use enums when you have values that you know aren't going to change, like month days, days, colors, deck of cards, etc.
-
----
 
 ## C++ Memory Address
 
 - When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address. To access it, use the `&` operator, and the result will represent where the variable is stored.
 - **Note:** The memory address is in hexadecimal form (0x..).
 
-- #### And why is it useful to know the memory address?
-
+- And why is it useful to know the memory address?
   - **References** and **Pointers** are important in C++, because they give you the ability to manipulate the data in the computer's memory - **which can reduce the code and improve the performance**.
   - These two features are one of the things that make C++ stand out from other programming languages, like [Python](https://www.w3schools.com/python/default.asp) and [Java](https://www.w3schools.com/java/default.asp).
-
----
 
 ## C++ Pointers
 
@@ -286,13 +267,9 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - `&`: **reference** operator.
 - `*`: the **dereference** operator
 - You can also change the pointer's value. But note that this will also change the value of the original variable ([example](https://www.w3schools.com/cpp/cpp_pointers_modify.asp#:~:text=the%20original%20variable%3A-,Example,-string%20food%20%3D)).
-
-- #### [How to Initialize a Dynamic Array in C++?](https://www.geeksforgeeks.org/initialize-a-dynamic-array-in-cpp/#:~:text=Array%20in%20C-,How%20to%20Initialize%20a%20Dynamic%20Array%20in%20C%2B%2B%3F,-Last%20Updated%20%3A)
-
+- [How to Initialize a Dynamic Array in C++?](https://www.geeksforgeeks.org/initialize-a-dynamic-array-in-cpp/#:~:text=Array%20in%20C-,How%20to%20Initialize%20a%20Dynamic%20Array%20in%20C%2B%2B%3F,-Last%20Updated%20%3A)
 - Memory is allocated using the `new` keyword: `int* p = new int[size];`
 - After the allocated memory is no longer needed, we can free it up using **`delete`**: `delete[] p;`
-
----
 
 ## C++ Functions
 
@@ -306,57 +283,46 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 - **Note:** If a user-defined function, such as `myFunction()` is declared after the `main()` function, **an error will occur**.
 - However, it is possible to separate the declaration and the definition of the function - for code optimization. You will often see C++ programs that have function declaration above `main()`, and function definition below `main()`. This will make the code better organized and easier to read.
 
-- #### Parameters and Arguments
-
+- Parameters and Arguments
   - Information can be passed to functions as a parameter. Parameters act as variables inside the function.
   - Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
   - When a **parameter** is passed to the function, it is called an **argument**.
 
-- #### Default Parameter Value
-
+- Default Parameter Value
   - You can also use a default parameter value, by using the equals sign (`=`) ([example](<https://www.w3schools.com/cpp/cpp_function_default.asp#:~:text=default%20value%20(%22Norway%22)%3A-,Example,-void%20myFunction()>).
   - **Default arguments** allow to specify a default value for the last parameters of the function by assigning them values right in the definition.
   - A parameter with a default value, is often known as an "**optional parameter**".
   - The default value will be used for the parameter, when no value is provided.
 
-- #### Multiple Parameters
-
+- Multiple Parameters
   - Note that when you are working with multiple parameters, the function call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.
 
-- #### Return Values
-
+- Return Values
   - The `void` keyword, indicates that the function should not return a value. If you want the function to return a value, you can use a data type (such as `int`, `string`, etc.) instead of `void`, and use the `return` keyword inside the function
   - The `return` keyword stops the function from executing. If there are any statements after `return`, they won't run.
 
-- #### Pass By Reference
-
+- Pass By Reference
   - we used normal variables when we passed parameters to a function. You can also pass a [reference](https://www.w3schools.com/cpp/cpp_references.asp) to the function. This can be useful when you need to change the value of the arguments.
-  - _Reference_ refer to an object or a value in memory.
+  - *Reference* refer to an object or a value in memory.
 
-- #### Pass Arrays as Function Parameters
-
+- Pass Arrays as Function Parameters
   - **Note** that when you call the function, you only need to use the name of the array when passing it as an argument `myFunction(myNumbers)`. However, the full declaration of the array is needed in the function parameter (`int myNumbers[5]`).
 
-- #### Function Overloading
-
+- Function Overloading
   - With **function overloading**, multiple functions can have the same name with different parameters.
   - Instead of defining two functions that should do the same thing, it is better to overload one.
   - **Note:** Multiple functions can have the same name as long as the number and/or type of parameters are different.
   - You **cannot** overload function declarations that differ only by return type.
 
-- #### Recursion
-
+- Recursion
   - Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
   - The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.
 
-- #### Friend Functions
-
+- Friend Functions
   - Note that when passing an object to the function, we need to pass it **by reference**, using the & operator.
 
-- #### Virtual Functions
-
+- Virtual Functions
   - Pure virtual functions are used
-
     - if a function doesn't have any use in the base class
     - but the function must be implemented by all its derived classes
 
@@ -373,9 +339,7 @@ The size of a pointer in C can differ based on factors like CPU architecture and
 
   -
 
----
-
-# C++ Initializing Variables | 3 Ways Including Brace Initialization
+## C++ Initializing Variables | 3 Ways Including Brace Initialization
 
 ```cpp
 int var1=3;  //Narrowing Conversion
@@ -388,33 +352,29 @@ int var3{3};
 cout<<"Value of var3="<<var3<<endl;
 ```
 
-- # Namespace in C++
+## Namespace in C++
 
-  - we can create our namespace like:
+- we can create our namespace like:
 
-    ```cpp
-    namespace ns { // ns is the name of our namespace
-        // A Class in a namespace
-        class sample {
-        public:
-            void display() {
-                cout << "My own namespace\n";
-            }
-        };
-    }
-    ```
-
----
+  ```cpp
+  namespace ns { // ns is the name of our namespace
+      // A Class in a namespace
+      class sample {
+      public:
+          void display() {
+              cout << "My own namespace\n";
+          }
+      };
+  }
+  ```
 
 ## Graph of various Time complexity functions
 
-    ![[Pasted image 20240605021042.png]]
+![Graph](res/Pasted%20image%2020240605021042.png)
 
----
+## C++ Classes
 
-# C++ Classes
-
-## C++ OOP
+### C++ OOP
 
 - Object-oriented programming has several advantages over procedural programming:
   - OOP is faster and easier to execute
@@ -431,7 +391,7 @@ cout<<"Value of var3="<<var3<<endl;
 - Objects are created using **classes**, which are actually the focal point of OOP.
 - In programming, an object is **self-contained**, with its own **identity**. It is separate from other objects. Each object has its own **attributes**, which describe its current state. Each exhibits its own **behavior**, which demonstrates what they can do.
 
-## C++ Classes and Objects
+### C++ Classes and Objects
 
 - The `class` keyword is used to create a class.
 - The `public` keyword is an **access specifier**, which specifies that members (attributes and methods) of the class are accessible from outside the class.
@@ -574,12 +534,10 @@ cout<<"Value of var3="<<var3<<endl;
   };
   ```
 
-- ##### Why And When To Use "Inheritance"?
-
+- Why And When To Use "Inheritance"?
   It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
-- ##### Multilevel Inheritance
-
+- Multilevel Inheritance
   - A class can also be derived from one class, which is already derived from another class.
 
   ```C++
@@ -600,8 +558,7 @@ cout<<"Value of var3="<<var3<<endl;
    };
   ```
 
-- ##### Multiple Inheritance
-
+- Multiple Inheritance
   - A class can also be derived from more than one base class, using a **comma-separated list `,`:**
 
     ```C++
@@ -626,8 +583,7 @@ cout<<"Value of var3="<<var3<<endl;
     };
     ```
 
-- ##### Protected Access Specifier
-
+- Protected Access Specifier
   - `protected`, is similar to `private`, but it can also be accessed in the **inherited** class:
 
     ```C++
@@ -650,10 +606,6 @@ cout<<"Value of var3="<<var3<<endl;
     };
     ```
 
-  ```
-
-  ```
-
 - Types of Inheritance:
   1. Single inheritance
   2. Multilevel inheritance
@@ -669,16 +621,11 @@ cout<<"Value of var3="<<var3<<endl;
 ## ==C++ Polymorphism==
 
 - Polymorphism means "**many forms**", and it occurs when we have many classes that are related to each other by inheritance.
-
-- #### Why And When To Use "Inheritance" and "Polymorphism"?
-
-      It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
-
+- Why And When To Use "Inheritance" and "Polymorphism"?
+  It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
   ==> [**Inheritance**](https://www.w3schools.com/cpp/cpp_inheritance.asp) lets us inherit attributes and methods from another class. ==**Polymorphism** uses those methods to perform different tasks.== This allows us to perform a single action in different ways.
 
----
-
-# C++ Files
+## C++ Files
 
 - The `fstream` library allows us to work with files.
 - Three new data types are defined in **fstream**:
@@ -717,9 +664,7 @@ cout<<"Value of var3="<<var3<<endl;
 
 - The **getline** function reads characters from an input stream and places them into a string.
 
----
-
-# C++ Exceptions
+## C++ Exceptions
 
 - Problems that occur during program execution are called **exceptions**.
 - C++ exception handling is built upon three keywords: **try, catch, and throw**.
@@ -742,9 +687,7 @@ cout<<"Value of var3="<<var3<<endl;
 - C++ provides a list of standard exceptions defined in **`exception`** which we can use in our programs. These are arranged in a parent-child class hierarchy shown below:
   ![[Pasted image 20240827231840.png]]
 
----
-
-# C++ Function Templates
+## C++ Function Templates
 
 - You can use templates to define functions as well as classes.
 - With function templates, the basic idea is to avoid the necessity of specifying an exact type for each variable. Instead, C++ provides us with the capability of defining functions using placeholder types, called **template type parameters**.
@@ -783,13 +726,9 @@ cout<<"Value of var3="<<var3<<endl;
 
 - ==>Templates allow us to declare generic types of data
 
----
+## C++ Date
 
-# C++ Date
-
----
-
-# The This Keyword
+## The This Keyword
 
 - Every object in C++ has access to its own address through an important pointer called the **this** pointer.
 - Friend functions do not have a **this** pointer, because friends are not members of a class.
@@ -814,9 +753,7 @@ class MyClass {
 - Note that only member functions have a **this** pointer.
 - The **this** keyword has an important role in **operator overloading**
 
----
-
-# Operator Overloading
+## Operator Overloading
 
 - Most of the C++ built-in operators can be redefined or **overloaded**.
   ![[Pasted image 20240825151844.png]]
@@ -825,8 +762,6 @@ class MyClass {
 - An overloaded operator is similar to other functions in that it has a **return type** and a **parameter list**.
 - With overloaded operators, you can use any custom logic needed. However, it's not possible to alter the operators' precedence, grouping, or number of operands.
 
----
-
 # C++ Opnecv
 
-[Opencv](Resources/classcv_1_1face_1_1FaceRecognizer.png)
+![Opencv](res/classcv_1_1face_1_1FaceRecognizer.png)

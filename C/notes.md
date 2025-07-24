@@ -1,13 +1,17 @@
 # C Notes
 
+- **What is a Size of a Pointer in C ?**
+  The size of a pointer in C can differ based on factors like CPU architecture and the operating system of a computer. Usually, ==the size of a pointer is 4 bytes== on a 32-bit computer system, and on a 64-bit computer system, the pointer size is 8 bytes.
+  ==It is common to all data types== like int _, float_ etc.
+
 ## extern Keyword in C
 
 extern keyword in C applies to C variables (data objects) and C functions. Basically, the extern keyword **extends the visibility of the C variables and C functions**. That’s probably the reason why it was named extern.
 
 Though most people probably understand the difference between the “declaration” and the “definition” of a variable or function, for the sake of completeness, let’s clarify it
 
-- **Declaration** of a variable or function simply declares that the variable or function exists somewhere in the program, but the memory is not allocated for them. The declaration of a variable or function serves an important role–it tells the program what its type is going to be. In the case of *function* declarations, it also tells the program the arguments, their data types, the order of those arguments, and the return type of the function. So that’s all about the declaration.
-- Coming to the **definition**, when we *define* a variable or function, in addition to everything that a declaration does, it also allocates memory for that variable or function. Therefore, we can think of the definition as a superset of the declaration (or declaration as a subset of the definition).
+- **Declaration** of a variable or function simply declares that the variable or function exists somewhere in the program, but the memory is not allocated for them. The declaration of a variable or function serves an important role–it tells the program what its type is going to be. In the case of _function_ declarations, it also tells the program the arguments, their data types, the order of those arguments, and the return type of the function. So that’s all about the declaration.
+- Coming to the **definition**, when we _define_ a variable or function, in addition to everything that a declaration does, it also allocates memory for that variable or function. Therefore, we can think of the definition as a superset of the declaration (or declaration as a subset of the definition).
 - Extern is a short name for external.
 - The extern variable is used when a particular files need to access a variable from another file.
 
