@@ -86,6 +86,80 @@ Nmap discovers live hosts using a variety of techniques including **ICMP (ping)*
 
 > **If the scan retuned none**, The reason is that _the target system_ or a _firewall_ on the route is **blocking** this type of ICMP packet. Therefore, it is essential to learn multiple approaches to achieve the same result. If one type of packet is being blocked, we can always choose another to discover the target network and services.
 
+## Nmap Host Discovery Using TCP and UDP
+
+### TCP SYN Ping
+
+- We can send a packet with the **SYN (Synchronize) flag** set to a _TCP port, 80 by default_, and wait for a response
+- An open port should reply with a **SYN/ACK (Acknowledge)**.
+- A closed port would result in an **RST (Reset)**.
+- In this case, we only check whether we will get any response to infer whether the host is up. The specific state of the port is not significant here.
+- The figure below is a reminder of how a **TCP 3-way handshake** usually works:
+  ![TCP SYN Ping 1](../assets/tcp-SYN-ping-1.png)
+- If you want Nmap to use TCP SYN ping, you can do so via the option `-PS` followed by the port number, range, list, or a combination of them. For example, `PS21` will target port 21, while `-PS21-25` will target ports 21, 22, 23, 24, and 25. Finally `-PS80,443,8080` will target the three ports 80, 443, and 8080.
+- Privileged users (root and sudoers) can send TCP SYN packets and **don’t need to complete the TCP 3-way handshake even if the port is open**, as shown in the figure below. Unprivileged users **have no choice but to complete the 3-way handshake if the port is open**:
+  ![TCP SYN Ping 2](../assets/tcp-SYN-ping-2.png)
+- Technically speaking, since we didn’t specify any TCP ports to use in the TCP ping scan, _Nmap used common ports_; in this case, it **is TCP port 80**. Any service listening on port 80 is _expected to reply_, indirectly indicating that the host is online:
+  ![TCP SYN Ping Wireshark](../assets/tcp-SYN-ping-Wshark.png)
+
+> TCP SYN Ping scan does not require a privileged account
+
+### TCP ACK Ping
+
+- This sends a packet with an **ACK flag set**.
+- You must be running Nmap as a **privileged user** to be able to accomplish this.
+- If you try it as an **unprivileged user**, Nmap will attempt a 3-way handshake.
+- By default, **port 80** is used.
+- `-PA` should be followed by a port number, range, list, or a combination of them. For example, consider `-PA21`, `-PA21-25` and `-PA80,443,8080`. If no port is specified, port 80 will be used
+- The following figure shows that any **TCP packet with an ACK flag** should get a **TCP packet back with an RST flag** set. The target responds with the RST flag set because the _TCP packet with the ACK flag is not part of any ongoing connection_. The expected response is used to detect if the target host is up:
+  ![TCP ACK Ping](../assets/tcp-ACK-ping.png)
+- If we peek at the network traffic as shown in the figure below, we will discover many packets with the _ACK flag_ set and sent to _port 80_ of the target systems:
+  ![TCP ACK Ping Wireshark](../assets/tcp-ACK-ping-Wshark.png)
+- Nmap sends each packet **twice**.
+- The systems that don’t respond are **offline or inaccessible**.
+
+> TCP ACK Ping scan requires a privileged account
+
+### UDP Ping
+
+- we use **UDP** to discover if the host is online.
+- Contrary to TCP SYN ping, sending a **UDP packet** to an open port is **not expected to lead to any reply**.
+- However, if we send a **UDP packet** to a closed UDP port, we expect to get an **ICMP port unreachable packet**; this indicates that the target system is up and available.
+- In the following figure, we see a UDP packet sent to an open UDP port and not triggering any response. However, sending a UDP packet to any closed UDP port can trigger a response indirectly indicating that the target is online:
+  ![UDP Ping | Opened port](../assets/udp-ping-1.png)
+  ![UPD Ping | Closed port](../assets/udp-ping-2.png)
+- Nmap uses `-PU` for UDP ping.
+- In the following Wireshark screenshot, we notice Nmap sending UDP packets to UDP ports that are most likely _closed_. The image below shows that Nmap uses an _uncommon UDP port_ to trigger an _ICMP destination unreachable_ (port unreachable) error:
+  ![UPD Ping Wireshark | Closed port](../assets/udp-pnig-Wshark.png)
+
+> On a side note, **Masscan** uses a similar approach to discover the available systems. However, to finish its network scan quickly, Masscan is quite aggressive with the rate of packets it generates. The syntax is quite similar: `-p` can be followed by a port number, list, or range.
+
+## Using Reverse-DNS Lookup
+
+- Nmap’s default behaviour is to use **reverse-DNS online hosts**.
+- Because the hostnames can _reveal a lot_, this can be a helpful step.
+- However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
+- By default, _Nmap will look up online hosts_; however, you can use the option `-R` to query the DNS server **even for offline hosts**.
+- If you want to use a _specific DNS server_, you can add the `--dns-servers DNS_SERVER` option.
+
+## Summary
+
+| Scan Type              | Example Command                             |
+| ---------------------- | ------------------------------------------- |
+| ARP Scan               | `sudo nmap -PR -sn MACHINE_IP/24`           |
+| ICMP Echo Scan         | `sudo nmap -PE -sn MACHINE_IP/24`           |
+| ICMP Timestamp Scan    | `sudo nmap -PP -sn MACHINE_IP/24`           |
+| ICMP Address Mask Scan | `sudo nmap -PM -sn MACHINE_IP/24`           |
+| TCP SYN Ping Scan      | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |
+| TCP ACK Ping Scan      | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |
+| UDP Ping Scan          | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |
+
+| Option | Purpose                                |
+| ------ | -------------------------------------- |
+| -n     | no DNS lookup                          |
+| -R     | reverse-DNS lookup for all hosts       |
+| -sn    | host discovery only (no port-scanning) |
+
 ## 🔍 To See
 
 - [arp-scan](https://linux.die.net/man/1/arp-scan) - The ARP scanner (die doc)

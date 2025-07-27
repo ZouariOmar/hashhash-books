@@ -4,7 +4,21 @@
 - [Compiling Java \*.class Files with javac](https://www.baeldung.com/javac)
 - [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
 - [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
+
+## Java With Maven
+
+- [MVN Repository](https://mvnrepository.com) [OFFICIAL]
 - [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+- [org.codehaus.mojo](https://www.mojohaus.org) [OFFICIAL]
+- [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin)
+- [Apache Maven Eclipse Plugin (RETIRED)](https://maven.apache.org/plugins/maven-eclipse-plugin)
+
+## JavaFX
+
+- [JavaFX - Run HelloWorld using Maven](https://openjfx.io/openjfx-docs/#maven)
+- [javafx-maven-plugin](https://github.com/openjfx/javafx-maven-plugin)
+- [OpenJFX Docs Samples](https://github.com/openjfx/samples/tree/master)
+- [JavaFX Fundamentals](https://dev.java/learn/javafx) - I Recommend this tutorial (doc)
 
 ## Java Built-in Packages Links
 
@@ -26,3 +40,7 @@
 ## Java Streams
 
 - [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
+
+## Mailing services
+
+- [Jakarta Mail](https://jakarta.ee/specifications/mail/2.0/jakarta-mail-spec-2.0)

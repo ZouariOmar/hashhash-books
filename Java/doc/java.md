@@ -58,3 +58,12 @@
 Integer myInteger = 10; // Autoboxing int to Integer
 int myInt = myInteger;  // Unboxing Integer to int
 ```
+
+## Java Constructor
+
+| Feature                | `public`            | `protected`                         | `private`                         |
+| ---------------------- | ------------------- | ----------------------------------- | --------------------------------- |
+| **Access**             | Anywhere            | Same package & subclasses           | Only within the same class        |
+| **Object Creation**    | Freely using `new`  | Controlled via inheritance/subclass | Restricted or controlled          |
+| **Common Usage**       | Most normal classes | Framework base classes, inheritance | Singleton, factory, utility class |
+| **Prevent Instancing** | ❌ No               | ⚠️ Partially (limited access)       | ✅ Yes                            |

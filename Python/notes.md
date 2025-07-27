@@ -115,3 +115,51 @@ def return_var():
 print(return_var())    # outputs: 5
 print(var)    # outputs: 5
 ```
+
+## Tuples
+
+- Tuples prefer to use **parenthesis**, whereas lists like to see brackets.
+- It's also possible to create a tuple just from a set of values separated by commas.
+- Example:
+
+  ```python
+  empty_tuple = ()
+  one_element_tuple_1 = (1, )
+  tuple_1 = (1, 2, 4, 8)
+  tuple_2 = 1., .5, .25, .125
+  ```
+
+- Tuples are ordered and unchangeable (immutable) collections of data.
+
+## Dictionaries
+
+- Dictionary is a set of **key-value pairs**. Note:
+  - Each key must be **unique** − it's not possible to have more than one key of the same value;
+  - A key may be any **immutable type** of object: it can be a number (integer or float), or even a string, but not a list;
+  - A dictionary is **not a list** − a list contains a set of numbered values, while a dictionary holds pairs of values;
+  - The `len()` function **works** for dictionaries, too − it returns the number of key-value elements in the dictionary;
+  - A dictionary is a **one-way tool** − if you have an English-French dictionary, you can look for French equivalents of English terms, but not vice versa.
+- Example:
+
+  ```python
+  dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+  phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
+  empty_dictionary = {}
+  ```
+
+- You mustn't use a **non-existent key** (will cause a runtime error)
+
+> In Python 3.6x dictionaries have become **ordered collections by default**. Your results may vary depending on what Python version you're using.
+
+### Methods
+
+- **`.keys()` method**: The `keys()` method in Python dictionaries returns **a view object** that displays a **list of all the keys** in the dictionary. This view object is dynamic, meaning it reflects any changes made to the dictionary after the `keys()` method is called.
+- **`.items()` method**: The `items()` method in Python is a built-in function used with dictionaries. It returns **a view object** that displays a **list of the dictionary's key-value pairs as tuples**.
+- **`.values()` method**: A built-in dictionary method that returns **a view object** **containing all the values** in the dictionary.
+- **`.popitem()` method**: Remove the **last item** in a dictionary
+
+> In the older versions of Python, i.e., before 3.6.7, the `popitem()` method removes a random item from a dictionary.
+
+## Exceptions
+
+![Exception](imgs/exception.png)

@@ -88,6 +88,9 @@ ZouariOmar@htb[/htb]$ ssh htb-student@[IP address]
 sudo openvpn --config academy-regular.ovpn
 ```
 
+- How `openvpn` work?
+  ![openVpn](../imgs/openvpn.png)
+
 ## Load Balancers
 
 - When a website's traffic starts getting quite large or is running an application that needs to have high availability, one web server might no longer do the job. Load balancers provide two main features, ensuring high traffic websites can handle the load and providing a failover if a server becomes unresponsive.
@@ -128,3 +131,7 @@ A WAF sits between your web request and the web server; its primary purpose is t
 - ICMP has [many types](https://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml). ICMP ping uses Type 8 (Echo) and Type 0 (Echo Reply).
 - If you want to ping a system on the same subnet, an ARP query should precede the ICMP Echo.
 - Although TCP and UDP are transport layers, for network scanning purposes, a scanner can send a specially-crafted packet to common TCP or UDP ports to check whether the target will respond. This method is efficient, especially when ICMP Echo is blocked.
+
+## Ethernet Cables
+
+![Ethernet Cables](../imgs/EthernetCables.png)
