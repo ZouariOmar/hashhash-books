@@ -1,6 +1,6 @@
 # JavaFx
 
-# FXML
+## FXML
 
 - FXML lets you _describe_ and _configure_ your scene graph in a declarative format.
 - This approach has several advantages:
@@ -11,3 +11,26 @@
   - You can also edit your FXML markup with text and IDE editors.
 
 > NOTE: The top-level container includes the name of the JavaFX controller class with attribute `fx:controller`.
+
+## JavaFX FXML controller
+
+### Constructor vs initialize method
+
+```java
+public class MainViewController {
+  public MainViewController() {
+    System.out.println("first");
+  }
+
+  @FXML
+  public void initialize() {
+    System.out.println("second");
+  }
+}
+// Output
+// first
+// second
+```
+
+- The constructor is called first, then any `@FXML` annotated fields are populated, then `initialize()` is called.
+- This means the constructor does **not have access to `@FXML`** fields referring to components defined in the `.fxml` file, while `initialize()` does have access to them.

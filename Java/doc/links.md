@@ -4,14 +4,20 @@
 - [Compiling Java \*.class Files with javac](https://www.baeldung.com/javac)
 - [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
 - [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
+- [What are Java Records and How to Use them Alongside Constructors and Methods?](https://www.geeksforgeeks.org/java/what-are-java-records-and-how-to-use-them-alongside-constructors-and-methods)
+- [Record Classes](https://docs.oracle.com/en/java/javase/17/language/records.html)
 
 ## Java With Maven
 
 - [MVN Repository](https://mvnrepository.com) [OFFICIAL]
 - [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+
+### Plugins
+
 - [org.codehaus.mojo](https://www.mojohaus.org) [OFFICIAL]
 - [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin)
 - [Apache Maven Eclipse Plugin (RETIRED)](https://maven.apache.org/plugins/maven-eclipse-plugin)
+- [org.slf4j - Java logging framework](https://logging.apache.org/log4j/2.x/manual/getting-started.html)
 
 ## JavaFX
 
@@ -19,6 +25,7 @@
 - [javafx-maven-plugin](https://github.com/openjfx/javafx-maven-plugin)
 - [OpenJFX Docs Samples](https://github.com/openjfx/samples/tree/master)
 - [JavaFX Fundamentals](https://dev.java/learn/javafx) - I Recommend this tutorial (doc)
+- [JavaFX FXML controller - constructor vs initialize method](https://stackoverflow.com/questions/34785417/javafx-fxml-controller-constructor-vs-initialize-method)
 
 ## Java Built-in Packages Links
 
@@ -44,3 +51,8 @@
 ## Mailing services
 
 - [Jakarta Mail](https://jakarta.ee/specifications/mail/2.0/jakarta-mail-spec-2.0)
+
+## Java Security
+
+- [SecureRandom](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/SecureRandom.html)
+- [Hashing a Password in Java](https://www.baeldung.com/java-password-hashing)

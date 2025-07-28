@@ -3,6 +3,17 @@
 - **What is Java?** Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. It is platform-independent, which means we can write code once and run it anywhere using the Java Virtual Machine (JVM). Java is mostly used for building desktop applications, web applications, Android apps, and enterprise systems.
 - **Wrapping** refers to the concept of using wrapper classes to encapsulate primitive data types within objects. These wrapper classes, such as `Integer`, `Double`, `Character`, and `Boolean`, provide a way to treat primitive values as objects, which is necessary for certain operations and data structures. ==Wrapper classes are in base language (java.lang)==
 
+- **Understanding `getClass().getResource()` vs `ClassName.class.getResource()` in Java**
+
+  | Feature               | `getClass().getResource(...)`                  | `YourClassName.class.getResource(...)`       |
+  | --------------------- | ---------------------------------------------- | -------------------------------------------- |
+  | **Context**           | Non-static context only                        | Can be used in static or non-static contexts |
+  | **Access Type**       | Instance method (`getClass()`)                 | Static class reference                       |
+  | **Usage in `main()`** | ❌ Not allowed directly                        | ✅ Allowed                                   |
+  | **Code Example**      | `getClass().getResource("/file.txt")`          | `MyClass.class.getResource("/file.txt")`     |
+  | **Common Error**      | "Cannot make a static reference to non-static" | None in static context                       |
+  | **When to Use**       | Inside instance methods                        | Inside static methods like `main()`          |
+
 ## Java data types
 
 ![Data Types in Java]('../res/Data Types in java.png')
@@ -67,3 +78,15 @@ int myInt = myInteger;  // Unboxing Integer to int
 | **Object Creation**    | Freely using `new`  | Controlled via inheritance/subclass | Restricted or controlled          |
 | **Common Usage**       | Most normal classes | Framework base classes, inheritance | Singleton, factory, utility class |
 | **Prevent Instancing** | ❌ No               | ⚠️ Partially (limited access)       | ✅ Yes                            |
+
+## Java Logging
+
+| Feature        | Log4j2          | java.util.logging (JUL) |
+| -------------- | --------------- | ----------------------- |
+| Configuration  | ✔ Flexible     | ❌ Basic                |
+| Performance    | ✔ High         | ❌ Slower               |
+| Async Logging  | ✔ Supported    | ❌ No                   |
+| Extensibility  | ✔ Rich         | ❌ Limited              |
+| Integration    | ✔ Excellent    | ❌ Limited              |
+| Learning Curve | Moderate        | Easy                    |
+| Security       | Safe if updated | Simpler (less risk)     |
