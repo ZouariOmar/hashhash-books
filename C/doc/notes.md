@@ -80,3 +80,17 @@ int main(void) {
 | `"a"`      | `char[2]` | 2             | `const char[2]` | 2               |
 
 > On most modern systems (e.g., x86_64), int is 4 bytes.
+
+## GCC
+
+### C program life cycle with `gcc`
+
+![C program life cycle](../res/cProgramLifeCycle.png)
+
+### `gcc` Flags
+
+| Flag               | Comment                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| `-S`               | Compile C code to assembly file                              |
+| `-S -fverbose-asm` | Compile C code to assembly file (+Verbose Assembly Comments) |
+| `-save-temps`      | Save generated gcc files (`.i`, `.o` and `.s`)               |

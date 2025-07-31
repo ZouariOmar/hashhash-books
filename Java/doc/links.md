@@ -14,6 +14,7 @@
 
 ### Plugins
 
+- [Writing Plugin Documentation](https://maven.apache.org/guides/development/guide-plugin-documentation.html)
 - [org.codehaus.mojo](https://www.mojohaus.org) [OFFICIAL]
 - [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin)
 - [Apache Maven Eclipse Plugin (RETIRED)](https://maven.apache.org/plugins/maven-eclipse-plugin)
@@ -26,6 +27,7 @@
 - [OpenJFX Docs Samples](https://github.com/openjfx/samples/tree/master)
 - [JavaFX Fundamentals](https://dev.java/learn/javafx) - I Recommend this tutorial (doc)
 - [JavaFX FXML controller - constructor vs initialize method](https://stackoverflow.com/questions/34785417/javafx-fxml-controller-constructor-vs-initialize-method)
+- [JavaFX Tutorial | Multiple Scene Communication](https://www.youtube.com/watch?v=HJC_JxpHTeU)
 
 ## Java Built-in Packages Links
 
@@ -56,3 +58,4 @@
 
 - [SecureRandom](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/SecureRandom.html)
 - [Hashing a Password in Java](https://www.baeldung.com/java-password-hashing)
+- [BCrypt](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/crypto/bcrypt/BCrypt.html)
