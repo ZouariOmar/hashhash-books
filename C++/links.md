@@ -9,6 +9,7 @@
 - [Significance of ios_base::sync_with_stdio(false); cin.tie(NULL);](https://stackoverflow.com/questions/31162367/significance-of-ios-basesync-with-stdiofalse-cin-tienull)
 - [Why is C++ cin much slower than scanf?](https://www.quora.com/Why-is-C-cin-much-slower-than-scanf)
 - [std::next_permutation and prev_permutation in C++](https://www.geeksforgeeks.org/cpp/stdnext_permutation-prev_permutation-c)
+- [Why Variable Length Array were Removed in C++?](https://www.geeksforgeeks.org/cpp/why-variable-length-array-were-removed-in-cpp)
 
 ## C++ GUI
 

@@ -14,6 +14,8 @@
   | **Common Error**      | "Cannot make a static reference to non-static" | None in static context                       |
   | **When to Use**       | Inside instance methods                        | Inside static methods like `main()`          |
 
+- A **resource bundle** is a Java `.properties` file that contains locale-specific data. It is a way of internationalising a Java application by making the code locale-independent.
+
 ## Java data types
 
 ![Data Types in Java]('../res/Data Types in java.png')
