@@ -765,3 +765,13 @@ class MyClass {
 # C++ Opnecv
 
 ![Opencv](res/classcv_1_1face_1_1FaceRecognizer.png)
+
+## const Vs constexpr
+
+| Feature            | `const`                                       | `constexpr`                                                                        |
+| ------------------ | --------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Evaluation**     | Runtime (can be compile-time)                 | Compile-time (for variables and functions when arguments are constant expressions) |
+| **Immutability**   | Enforces runtime immutability                 | Enforces compile-time immutability                                                 |
+| **Initialization** | Can be initialized at runtime or compile time | Must be initialized with a constant expression                                     |
+| **Implicit const** | No                                            | Yes, all `constexpr` variables are implicitly `const`                              |
+| **Optimization**   | Limited                                       | Designed for compile-time optimizations                                            |

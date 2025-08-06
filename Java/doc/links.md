@@ -29,6 +29,7 @@
 - [JavaFX FXML controller - constructor vs initialize method](https://stackoverflow.com/questions/34785417/javafx-fxml-controller-constructor-vs-initialize-method)
 - [JavaFX Tutorial | Multiple Scene Communication](https://www.youtube.com/watch?v=HJC_JxpHTeU)
 - [JavaFX WebView + building a web browser 🌐](https://www.youtube.com/watch?v=96r3olimdkA&t=868s)
+- [Introduction to JavaFX animations](https://dev.java/learn/javafx-animations)
 
 ## Java Built-in Packages Links
 
