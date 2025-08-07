@@ -15,3 +15,7 @@
 - [Reversal algorithm for Array rotation](https://www.geeksforgeeks.org/dsa/program-for-array-rotation-continued-reversal-algorithm)
 - [Bubble Sort Algorithm](https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm)
 - [Sort an array of 0s, 1s and 2s - Dutch National Flag Problem](https://www.geeksforgeeks.org/dsa/sort-an-array-of-0s-1s-and-2s)
+
+## Graph
+
+- [Depth First Search or DFS for a Graph](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/article/MTgyMTI%3D)
