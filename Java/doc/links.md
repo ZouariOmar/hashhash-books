@@ -1,18 +1,23 @@
 # Java Links
 
-- [javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)
 - [Compiling Java \*.class Files with javac](https://www.baeldung.com/javac)
 - [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
-- [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
 - [What are Java Records and How to Use them Alongside Constructors and Methods?](https://www.geeksforgeeks.org/java/what-are-java-records-and-how-to-use-them-alongside-constructors-and-methods)
 - [Record Classes](https://docs.oracle.com/en/java/javase/17/language/records.html)
 
-## Java With Maven
+## Java Tools
+
+- [The jpackage Command](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html)
+- [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
+- [jlink](https://docs.oracle.com/en/java/javase/11/tools/jlink.html)
+- [javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)
+
+### Maven
 
 - [MVN Repository](https://mvnrepository.com) [OFFICIAL]
 - [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
-### Plugins
+#### Plugins
 
 - [Writing Plugin Documentation](https://maven.apache.org/guides/development/guide-plugin-documentation.html)
 - [org.codehaus.mojo](https://www.mojohaus.org) [OFFICIAL]
