@@ -61,3 +61,27 @@
   `result = data.method(arg)`
 - **Note**: the name of the method is preceded by the name of the data which owns the method. Next, you add a dot, followed by the method name, and a pair of parenthesis enclosing the arguments.
 - The method will behave like a function, but can do something more ‒ it can change the internal state of the data from which it has been invoked.
+
+## Naming Conventions
+
+| Case Type       | Format Example  | Description                                       | Common Use Cases                            |
+| --------------- | --------------- | ------------------------------------------------- | ------------------------------------------- |
+| **Kebab Case**  | `fun-fun-games` | Lowercase words separated by **dashes (-)**       | GitHub repo names, URLs, CSS classes        |
+| **Pascal Case** | `FunFunGames`   | Each word capitalized and joined without space    | Class names in C#, Java, React components   |
+| **Snake Case**  | `fun_fun_games` | Lowercase words separated by **underscores (\_)** | Python variables, filenames, some APIs      |
+| **Camel Case**  | `funFunGames`   | Like Pascal, but the first word is lowercase      | JavaScript variables/functions, Java fields |
+
+### When to Use Each
+
+- Kebab Case
+  - Best for: GitHub repo names, URLs, CSS classes
+  - Reason: Easy to read, URL-friendly, widely accepted on web
+- Pascal Case
+  - Best for: Class names, component names, namespaces
+  - Reason: Clear word boundaries, common in many OOP languages
+- Snake Case
+  - Best for: Python variables, constants, config files
+  - Reason: Easy to type and read in scripts, widely adopted in Python community
+- Camel Case
+  - Best for: Variable and function names in JavaScript, Java, C#
+  - Reason: Keeps names concise and readable while distinguishing words
