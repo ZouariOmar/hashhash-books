@@ -4,6 +4,8 @@
 - [JAR files in Java](https://www.geeksforgeeks.org/jar-files-java/)
 - [What are Java Records and How to Use them Alongside Constructors and Methods?](https://www.geeksforgeeks.org/java/what-are-java-records-and-how-to-use-them-alongside-constructors-and-methods)
 - [Record Classes](https://docs.oracle.com/en/java/javase/17/language/records.html)
+- [Java Class vs Interfaces](https://www.geeksforgeeks.org/java/differences-between-interface-and-class-in-java/)
+- [Using an Interface vs. Abstract Class in Java](https://www.baeldung.com/java-interface-vs-abstract-class)
 
 ## Java Tools
 
@@ -11,6 +13,8 @@
 - [A Guide to jpackage in Java](https://www.baeldung.com/java14-jpackage)
 - [jlink](https://docs.oracle.com/en/java/javase/11/tools/jlink.html)
 - [javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)
+- [jmap - Profiling](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jmap.html)
+- [jvisualvm - Profiling](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jvisualvm.html)
 
 ### Maven
 

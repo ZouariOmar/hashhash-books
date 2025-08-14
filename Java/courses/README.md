@@ -24,3 +24,9 @@
 - ch1: Introduction to Input/Output Operations
 - ch2: Iterators and Streams
 - ch3: Custom Methods, Date/Time and Enums
+
+## [Optimizing Code in Java](Optimizing%20Code%20in%20Java.zip)
+
+- ch1: Big-O notation: time complexity
+- ch2: Understanding performance bottlenecks
+- ch3: Basic multi-threading principles
