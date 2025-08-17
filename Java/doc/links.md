@@ -31,6 +31,8 @@
 
 ## JavaFX
 
+### Desktop app
+
 - [JavaFX - Run HelloWorld using Maven](https://openjfx.io/openjfx-docs/#maven)
 - [javafx-maven-plugin](https://github.com/openjfx/javafx-maven-plugin)
 - [OpenJFX Docs Samples](https://github.com/openjfx/samples/tree/master)
@@ -39,6 +41,13 @@
 - [JavaFX Tutorial | Multiple Scene Communication](https://www.youtube.com/watch?v=HJC_JxpHTeU)
 - [JavaFX WebView + building a web browser 🌐](https://www.youtube.com/watch?v=96r3olimdkA&t=868s)
 - [Introduction to JavaFX animations](https://dev.java/learn/javafx-animations)
+
+### Mobile app
+
+- [How to Create Mobile Apps with JavaFX (Part 1)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-1/)
+- [How to Create Mobile Apps with JavaFX (Part 2)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-2/)
+- [How to Create Mobile Apps with JavaFX (Part 3)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-3/)
+- [IntelliJ IDEA Conf 2022 | JavaFX for Mobile Development](https://www.youtube.com/watch?v=VCJtdb28HWE)
 
 ## Java Built-in Packages Links
 
@@ -70,3 +79,8 @@
 - [SecureRandom](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/SecureRandom.html)
 - [Hashing a Password in Java](https://www.baeldung.com/java-password-hashing)
 - [BCrypt](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/crypto/bcrypt/BCrypt.html)
+
+## Java redis
+
+- [Jedis guide (Java)](https://redis.io/docs/latest/develop/clients/jedis/)
+- [Intro to Jedis – the Java Redis Client Library](https://www.baeldung.com/jedis-java-redis-client-library)

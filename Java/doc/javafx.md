@@ -83,3 +83,18 @@ public class MainViewController {
       }
   }
   ```
+
+## JavaFx Mobile Dev
+
+You can create a basic JavaFX project from a Maven archetype using the following command:
+
+```bash
+mvn -B \ # Batch mode (without prompting the user for input during the build or generation process)
+    archetype:generate \
+    -DarchetypeGroupId=com.gluonhq \
+    -DarchetypeArtifactId=gluonfx-archetype-javafx \
+    -DarchetypeVersion=0.0.3 \
+    -DgroupId=com.gluonhq \
+    -DartifactId=gluon-client-sample \
+    -Dversion=1.0.0-SNAPSHOT
+```
