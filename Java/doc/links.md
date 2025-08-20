@@ -16,6 +16,27 @@
 - [jmap - Profiling](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jmap.html)
 - [jvisualvm - Profiling](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jvisualvm.html)
 
+## Java Built-in Packages Links
+
+- [Java Packages](https://www.geeksforgeeks.org/packages-in-java)
+- [Collections in Java](https://www.geeksforgeeks.org/collections-in-java-2)
+- [Java Collection Tutorial](https://www.geeksforgeeks.org/java-collection-tutorial)
+- [Autoboxing and Unboxing in Java](https://www.geeksforgeeks.org/autoboxing-unboxing-java)
+- [java.util.concurrent.atomic](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html)
+- [AtomicInteger](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
+- [ListIterator in Java](https://www.geeksforgeeks.org/java/listiterator-in-java)
+- [ArrayList vs LinkedList](https://www.geeksforgeeks.org/java/arraylist-vs-linkedlist-java/)
+
+### Java IO
+
+- [Java.io Package in Java](https://www.geeksforgeeks.org/java-io-packag)
+- [Package java.io](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html)
+- [Understanding the Main Java I/O Concepts](https://dev.java/learn/java-io/intro)
+
+## Java Streams
+
+- [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
+
 ### Maven
 
 - [MVN Repository](https://mvnrepository.com) [OFFICIAL]
@@ -43,33 +64,13 @@
 - [JavaFX WebView + building a web browser 🌐](https://www.youtube.com/watch?v=96r3olimdkA&t=868s)
 - [Introduction to JavaFX animations](https://dev.java/learn/javafx-animations)
 
-### Mobile app
+### Mobile app (Gluon)
 
+- [Gluon Documentation](https://docs.gluonhq.com/#_gluon_start)
 - [How to Create Mobile Apps with JavaFX (Part 1)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-1/)
 - [How to Create Mobile Apps with JavaFX (Part 2)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-2/)
 - [How to Create Mobile Apps with JavaFX (Part 3)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-3/)
 - [IntelliJ IDEA Conf 2022 | JavaFX for Mobile Development](https://www.youtube.com/watch?v=VCJtdb28HWE)
-
-## Java Built-in Packages Links
-
-- [Java Packages](https://www.geeksforgeeks.org/packages-in-java)
-- [Collections in Java](https://www.geeksforgeeks.org/collections-in-java-2)
-- [Java Collection Tutorial](https://www.geeksforgeeks.org/java-collection-tutorial)
-- [Autoboxing and Unboxing in Java](https://www.geeksforgeeks.org/autoboxing-unboxing-java)
-- [java.util.concurrent.atomic](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html)
-- [AtomicInteger](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
-- [ListIterator in Java](https://www.geeksforgeeks.org/java/listiterator-in-java)
-- [ArrayList vs LinkedList](https://www.geeksforgeeks.org/java/arraylist-vs-linkedlist-java/)
-
-### Java IO Links
-
-- [Java.io Package in Java](https://www.geeksforgeeks.org/java-io-packag)
-- [Package java.io](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html)
-- [Understanding the Main Java I/O Concepts](https://dev.java/learn/java-io/intro)
-
-## Java Streams
-
-- [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
 
 ## Mailing services
 
@@ -85,3 +86,8 @@
 
 - [Jedis guide (Java)](https://redis.io/docs/latest/develop/clients/jedis/)
 - [Intro to Jedis – the Java Redis Client Library](https://www.baeldung.com/jedis-java-redis-client-library)
+
+## Java for Android dev
+
+- [Android Tutorial](https://www.tutorialspoint.com/android/index.htm)
+- [Building Java Applications Sample](https://docs.gradle.org/current/samples/sample_building_java_applications.html)
