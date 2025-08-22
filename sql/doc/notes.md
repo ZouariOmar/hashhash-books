@@ -1,4 +1,4 @@
-# SQL
+# SQL Notes
 
 - SQL stands for **Structured Query Language**.
 - Spreadsheets: e.g Excel.
