@@ -6,6 +6,8 @@
 - [Record Classes](https://docs.oracle.com/en/java/javase/17/language/records.html)
 - [Java Class vs Interfaces](https://www.geeksforgeeks.org/java/differences-between-interface-and-class-in-java/)
 - [Using an Interface vs. Abstract Class in Java](https://www.baeldung.com/java-interface-vs-abstract-class)
+- [(Linux/CentOS/Solaris) How to Load a Java Native/Shared Library (.so)](https://www.chilkatsoft.com/java-loadlibrary-linux.asp)
+- [How to Build a Shared Library in Java and Call it From .NET Code](https://medium.com/@sixpeteunder/how-to-build-a-shared-library-in-java-and-call-it-from-dotnet-code-b47c22300456)
 
 ## Java Tools
 
