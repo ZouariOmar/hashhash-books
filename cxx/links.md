@@ -62,6 +62,7 @@
 - [std::optional](https://builtin.com/articles/stdoptional)
 - [std::popcount](https://en.cppreference.com/w/cpp/numeric/popcount)
 - [How to Heapify a Heap Tree in C++](https://builtin.com/software-engineering-perspectives/heapify-heap-tree-cpp)
+- [Heap in C++ STL](https://www.geeksforgeeks.org/cpp/cpp-stl-heap)
 
 ## **C++ Inheritance**
 
