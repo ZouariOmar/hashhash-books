@@ -11,6 +11,8 @@
 - [JavaFX WebView + building a web browser 🌐](https://www.youtube.com/watch?v=96r3olimdkA&t=868s)
 - [Introduction to JavaFX animations](https://dev.java/learn/javafx-animations)
 - [How to make an animation with CSS in JavaFX?](https://stackoverflow.com/questions/17676274/how-to-make-an-animation-with-css-in-javafx)
+- [JavaFX CSS Reference Guide](https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html)
+- [JavaFX tutorialspoint](https://www.tutorialspoint.com/javafx)
 
 ### i18
 

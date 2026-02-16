@@ -49,6 +49,12 @@
 - [Package java.io](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html)
 - [Understanding the Main Java I/O Concepts](https://dev.java/learn/java-io/intro)
 
+## Java Annotations
+
+- [Annotations in Java](https://www.geeksforgeeks.org/java/annotations-in-java)
+- [Java - @Retention Annotations](https://www.geeksforgeeks.org/java/java-retention-annotations)
+- [Java - @Target Annotations](https://www.geeksforgeeks.org/java/java-target-annotations)
+
 ## Java Streams
 
 - [Guide to Stream.reduce()](https://www.baeldung.com/java-stream-reduce)
