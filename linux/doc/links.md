@@ -51,3 +51,4 @@
 - [Why do I get "wrong fs type, bad option, bad superblock" error?](https://askubuntu.com/questions/525243/why-do-i-get-wrong-fs-type-bad-option-bad-superblock-error)
 - [crypttab](https://wiki.archlinux.org/title/Dm-crypt/System_configuration#crypttab)
 - [TempleOS in 100 Seconds](https://www.youtube.com/watch?v=h7gf5M04hdg)
+- [How to Convert Markdown to PDF in Linux](https://www.baeldung.com/linux/pdf-markdown-conversion)
