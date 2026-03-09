@@ -1,25 +1,25 @@
-# 🧠 How to Install Cisco Packet Tracer on Arch Linux
+# How to Install Cisco Packet Tracer on Arch Linux
 
-> ⚠️ Cisco does **not** allow direct downloads of Packet Tracer via scripts due to licensing restrictions. You must manually download the `.deb` package from Cisco NetAcad.
+> Cisco does **not** allow direct downloads of Packet Tracer via scripts due to licensing restrictions. You must manually download the `.deb` package from Cisco NetAcad.
 
-## 📦 Prerequisites
+## Prerequisites
 
 Before you begin:
 
-- ✅ You need a [Cisco NetAcad account](https://www.netacad.com/)
-- ✅ Make sure your system is up to date:
+- You need a [Cisco NetAcad account](https://www.netacad.com/)
+- Make sure your system is up to date:
 
 ```bash
 sudo pacman -Syu
 ```
 
-- ✅ Install build tools:
+- Install build tools:
 
 ```bash
 sudo pacman -S --needed base-devel git
 ```
 
-## 🛠️ Method 1: Using AUR Helper (e.g., `yay`)
+## Method 1: Using AUR Helper (e.g., `yay`)
 
 ### 1. **Install yay (if not installed)**
 
@@ -60,7 +60,7 @@ yay -S packettracer
 
 It should now proceed with the build and install.
 
-## 🧱 Method 2: Manual AUR Installation
+## Method 2: Manual AUR Installation
 
 Use this method if you prefer building manually without an AUR helper.
 
@@ -85,7 +85,7 @@ cd packettracer
 cp ~/Downloads/CiscoPacketTracer_811_Ubuntu_64bit.deb .
 ```
 
-> 🔁 Make sure the filename in the PKGBUILD matches the downloaded file. You may need to edit the `PKGBUILD` if Cisco updated the version.
+> Make sure the filename in the PKGBUILD matches the downloaded file. You may need to edit the `PKGBUILD` if Cisco updated the version.
 
 ### 4. **Build and install**
 
@@ -93,7 +93,7 @@ cp ~/Downloads/CiscoPacketTracer_811_Ubuntu_64bit.deb .
 makepkg -si
 ```
 
-## ▶️ Running Packet Tracer
+## Running Packet Tracer
 
 You can now launch Packet Tracer from your terminal:
 
@@ -103,7 +103,7 @@ packettracer
 
 Or find it in your **application launcher**.
 
-## 🔄 Updating Packet Tracer
+## Updating Packet Tracer
 
 When Cisco releases a new version:
 
@@ -123,7 +123,7 @@ makepkg -si
 
 Download the new `.deb` file as needed and replace the old one.
 
-## ❌ Uninstallation
+## Uninstallation
 
 To remove Packet Tracer:
 
@@ -131,7 +131,7 @@ To remove Packet Tracer:
 sudo pacman -Rns packettracer
 ```
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
 - **Missing `.deb` file**:
   - Make sure the `.deb` is in the right directory

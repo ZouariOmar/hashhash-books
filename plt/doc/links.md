@@ -2,6 +2,11 @@
 
 - [Programming language theory](https://en.wikipedia.org/wiki/Programming_language_theory)
 
+## NFA to DFA
+
+- [NFA To DFA Conversion Using Epsilon Closure](https://www.youtube.com/watch?v=jN8zvENdjBg)
+- [Les Automates à États Finis (AFD) - Méthode de Minimisation](https://www.youtube.com/watch?v=ZQEEkUJ1ebA)
+
 ## Flex
 
 - [Flex for Windows](https://gnuwin32.sourceforge.net/packages/flex.htm)
@@ -12,3 +17,4 @@
 
 - [Théorie des langages et compilation](https://www.youtube.com/playlist?list=PLqktoQpXXG5CRtjQ97z0z8cAMRfR7bbaM)
 - [Théorie des langages - Exercices](https://youtube.com/playlist?list=PLlnWZI5J2hBC4NPC8criiqgLuaSY6SpiZ&si=u1DfPVoub5AnXh1Z)
+- [Regular Expression | theory of computation](https://youtube.com/playlist?list=PLBlnK6fEyqRhea_MSZcg0kvcWZhpXLG-a&si=BfcldjEc9WsptECy)
