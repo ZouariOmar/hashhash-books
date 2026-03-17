@@ -40,6 +40,7 @@ gcc lex.yy.c -o lexer -lfl  # compile
 | `+`   | 1 ou plusieurs répétitions                  |                  |
 | `?`   | 0 ou 1 occurrence                           |                  |
 | `[]`  | classe de caractères `[a-z]`                |                  |
+| `()`  | grouper plusieurs caractères                |                  |
 | `^`   | début de ligne (ou complément si dans `[]`) |                  |
 | `$`   | fin de ligne                                |                  |
 | `     | `                                           | alternative (OU) |

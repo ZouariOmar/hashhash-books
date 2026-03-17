@@ -26,3 +26,7 @@
 - [How to Create Mobile Apps with JavaFX (Part 2)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-2/)
 - [How to Create Mobile Apps with JavaFX (Part 3)](https://foojay.io/today/creating-mobile-apps-with-javafx-part-3/)
 - [IntelliJ IDEA Conf 2022 | JavaFX for Mobile Development](https://www.youtube.com/watch?v=VCJtdb28HWE)
+
+## Open source Libs
+
+- [Lottie4J Project](https://lottie4j.com)

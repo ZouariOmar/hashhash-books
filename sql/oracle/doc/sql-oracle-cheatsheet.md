@@ -110,6 +110,8 @@ Example:
 > - At column level, or
 > - At table level when needed.
 
+Example:
+
 ```sql
 CREATE TABLE employees (
     id NUMBER,
@@ -374,6 +376,8 @@ SELECT id FROM table2;
 ```
 
 ## Joins
+
+![sql-joins](../res/sql-join.png)
 
 ### CROSS JOIN
 
