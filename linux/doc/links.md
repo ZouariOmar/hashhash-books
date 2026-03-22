@@ -29,6 +29,7 @@
 - [Using Wireshark Command-Line Tool (TShark)](https://baturorkun.medium.com/using-wireshark-command-line-tool-tshark-62a32beef12c)
 - [magick](https://imagemagick.org)
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
+- [cpack](https://linux.die.net/man/1/cpack28)
 
 ### Qemu
 

@@ -9,6 +9,10 @@
 - [Using HuggingFace datasets for NLP Projects](https://www.geeksforgeeks.org/nlp/accessing-huggingface-datasets-for-nlp-experiments)
 - [ReAct Prompting](https://www.promptingguide.ai/techniques/react)
 
+## Tools
+
+- [UV - Python package and project manager](https://docs.astral.sh/uv/)
+
 ## Face Recognition
 
 - [Face Recognition System using LBPH Algorithm](https://karthikeyan-pcp.medium.com/face-recognition-system-using-lbph-algorithm-3145b4820646)
