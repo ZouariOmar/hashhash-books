@@ -15,7 +15,7 @@
 ## What can MCP enable?
 
 - Agents can access your Google Calendar and Notion, acting as a more personalized AI assistant.
-- Claude Code can generate an entire web app using a Figma design.
+- AI model Code can generate an entire web app using a Figma design.
 - Enterprise chatbots can connect to multiple databases across an organization, empowering users to analyze data using chat.
 - AI models can create 3D designs on Blender and print them out using a 3D printer.
 
@@ -115,7 +115,7 @@ This tool takes three parameters: the document ID, the text to find, and the rep
 
 - No manual JSON schema writing required
 - Type hints provide automatic validation
-- Clear parameter descriptions help Claude understand tool usage
+- Clear parameter descriptions help the ai model understand tool usage
 - Error handling integrates naturally with Python exceptions
 - Tool registration happens automatically through decorators
 
@@ -277,3 +277,140 @@ def fetch_doc(doc_id: str) -> str:
 
 > [!NOTE]
 > You can test resources using the **MCP Inspector**.
+
+### Accessing resources
+
+- Resources in MCP allow your server to expose information that can be directly included in prompts, rather than requiring tool calls to access data.
+- This creates a more efficient way to provide context to AI models.
+
+#### Implementing Resource Reading
+
+To enable resource access in your MCP client, you need to implement a `read_resource` function. First, add the necessary imports:
+
+```python
+import json
+from pydantic import AnyUrl
+```
+
+The core function makes a request to the MCP server and processes the response based on its MIME type:
+
+```python
+async def read_resource(self, uri: str) -> Any:
+    result = await self.session().read_resource(AnyUrl(uri))
+    resource = result.contents[0]
+
+    if isinstance(resource, types.TextResourceContents):
+        if resource.mimeType == "application/json":
+            return json.loads(resource.text)
+
+    return resource.text
+```
+
+#### Understanding the Response Structure
+
+- When you request a resource, the server returns a result with a contents list.
+- We access the first element since we typically only need one resource at a time.
+- The response includes:
+  - The actual content (text or data)
+  - A MIME type that tells us how to parse the content
+  - Other metadata about the resource
+
+#### Content Type Handling
+
+- The function checks the MIME type to determine how to process the content:
+  - If it's `application/json`, parse the text as JSON and return the parsed object
+  - Otherwise, return the raw text content
+- This approach handles both structured data (like JSON) and plain text documents seamlessly.
+
+### Defining prompts
+
+- Prompts in MCP servers let you define pre-built, high-quality instructions that clients can use instead of writing their own prompts from scratch.
+- Think of them as carefully crafted templates that give better results than what users might come up with on their own.
+
+![MCP Prompt](res/mcp-prompt.png)
+
+#### Why Use Prompts?
+
+> [!TIP]
+> users can already ask AI model to do most tasks directly. For example, a user could type
+> "reformat the report.pdf in markdown" and get decent results. But they'll get much better
+> results if you provide a thoroughly tested, specialized prompt that handles edge cases and
+> follows best practices.
+
+- As the MCP server author, you can spend time crafting, testing, and evaluating prompts that work consistently across different scenarios.
+- Users benefit from this expertise without having to become prompt engineering experts themselves.
+
+![Why MCP Prompts](res/why-mcp-prompt.png)
+
+#### Defining Prompts
+
+Prompts use a similar decorator pattern to tools and resources:
+
+```python
+@mcp.prompt(
+    name="format",
+    description="Rewrites the contents of the document in Markdown format."
+)
+def format_document(
+    doc_id: str = Field(description="Id of the document to format")
+) -> list[base.Message]:
+    prompt = f"""
+Your goal is to reformat a document to be written with markdown syntax.
+
+The id of the document you need to reformat is:
+<document_id>
+{doc_id}
+</document_id>
+
+Add in headers, bullet points, tables, etc as necessary. Feel free to add in structure.
+Use the 'edit_document' tool to edit the document. After the document has been reformatted...
+"""
+
+    return [
+        base.UserMessage(prompt)
+    ]
+```
+
+The function returns a list of messages that get sent directly to AI model. You can include multiple user and assistant messages to create more complex conversation flows.
+
+#### Testing Your Prompts
+
+Use the MCP Inspector to test your prompts before deploying them:
+![Test MCP Prompts](res/test-mcp-prompt.png)
+
+> [!NOTE]
+> The inspector shows you exactly what messages will be sent to AI model, including how
+> variables get interpolated into your prompt template. This lets you verify the prompt looks
+> correct before users start relying on it.
+
+#### Key Benefits
+
+- **Consistency** - Users get reliable results every time
+- **Expertise** - You can encode domain knowledge into prompts
+- **Reusability** - Multiple client applications can use the same prompts
+- **Maintenance** - Update prompts in one place to improve all clients
+
+- Prompts work best when they're specialized for your MCP server's domain.
+- A document management server might have prompts for formatting, summarizing, or analyzing documents.
+- A data analysis server might have prompts for generating reports or visualizations.
+
+> [!IMPORTANT]
+> The goal is to provide prompts that are so well-crafted and tested that users prefer them over
+> writing their own instructions from scratch.
+
+### Prompts in the client
+
+#### How Prompts Work
+
+![How Prompts Work](res/how-prompt-work.png)
+
+- Prompts define a set of user and assistant messages that clients can use.
+- They should be high-quality, well-tested, and relevant to your MCP server's purpose.
+- The workflow is:
+  - Write and evaluate a prompt relevant to your server's functionality
+  - Define the prompt in your MCP server using the `@mcp.prompt` decorator
+  - Clients can request the prompt at any time
+  - Arguments provided by the client become keyword arguments in your prompt function
+  - The function returns formatted messages ready for the AI model
+- This system creates reusable, parameterized prompts that maintain consistency while allowing customization through variables.
+- It's particularly useful for complex workflows where you want to ensure the AI receives properly structured instructions every time.
