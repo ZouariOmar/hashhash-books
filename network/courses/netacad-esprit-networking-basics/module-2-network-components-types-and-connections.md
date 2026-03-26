@@ -4,7 +4,7 @@
 
 ### Client and Server Roles
 
-![Client and Server Roles](../res/client-and-server-roles.png)
+![Client and Server Roles](res/client-and-server-roles.png)
 
 - All computers connected to a network that participate directly in network communication are classified as hosts.
 - **Hosts** can send and receive messages on the network.
@@ -17,7 +17,7 @@
 - A **peer-to-peer (P2P) network** is a decentralized IT infrastructure where individual computers (nodes/peers) connect directly to share resources—such as files, bandwidth, or processing power—without a central server.
 - Each node acts as **both a client and a server**, enhancing efficiency and resilience but making them best suited for smaller, decentralized setups or file-sharing applications
 
-![advantages and disadvantages of P2P networking](../res/advantages-and-disadvantages-of-p2p-networking.png)
+![advantages and disadvantages of P2P networking](res/advantages-and-disadvantages-of-p2p-networking.png)
 
 ### Peer-to-Peer Applications
 
@@ -25,14 +25,14 @@
 - Popular for file sharing (e.g., BitTorrent) and instant payments (e.g., Venmo), they offer high efficiency but require strong security to manage risks.
 - Key examples include Zelle, Cash App, and PayPal.
 
-![Peer-to-Peer Applications](../res/p2p-apps.png)
+![Peer-to-Peer Applications](res/p2p-apps.png)
 
 ### Multiple Roles in the Network
 
 - A computer with server software can provide services simultaneously to one or many clients
 - A single computer can run multiple types of client/server software
 
-![Multiple Roles in the Networks example](../res/multiple-roles-in-the-network.png)
+![Multiple Roles in the Networks example](res/multiple-roles-in-the-network.png)
 
 ## Network Components
 
@@ -43,7 +43,7 @@
   - Intermediate devices
   - Network media
 
-![Hardware Components](../res/hardware-components.png)
+![Hardware Components](res/hardware-components.png)
 
 - In the case of wireless media, messages are transmitted through the air using invisible radio frequencies or infrared waves.
 
@@ -70,13 +70,13 @@
 - ISPs are connected in a hierarchical manner that ensures that internet traffic generally takes the shortest path from the source to the destination.
 - The internet backbone is like an information super highway that provides high-speed data links to connect the various service provider networks in major metropolitan areas around the world.
 
-![ISP Services](../res/isp-services.png)
+![ISP Services](res/isp-services.png)
 
 ### ISP Connections
 
 - The interconnection of ISPs that forms the backbone of the internet is a complex web of fiber-optic cables with expensive networking switches and routers that direct the flow of information between source and destination hosts.Multiple
 
-![ISP Connections](../res/isp-connection.png)
+![ISP Connections](res/isp-connection.png)
 
 > [!NOTE]
 > The top portion of the figure displays the simplest ISP connection option. It consists of a modem that provides a direct connection between a computer and the ISP. This option should not be used though, because your computer is not protected on the internet.
@@ -88,7 +88,7 @@
 ### Cable and DSL Connections
 
 - The figure illustrates common connection options for small office and home users:
-  ![Common Connection Options](../res/common-connection-options.png)
+  ![Common Connection Options](res/common-connection-options.png)
 
 - The two most common methods are as follows:
 

@@ -59,7 +59,7 @@ There are three common methods of signal transmission used in networks:
 
 - Typically measured in **bits per second** (bps, Mbps, Gbps). It defines the capacity, rather than the raw speed, of a network to move data
 
-![Bandwidth Unit](../res/bandwidth-unit.png)
+![Bandwidth Unit](res/bandwidth-unit.png)
 
 ### Throughput
 
