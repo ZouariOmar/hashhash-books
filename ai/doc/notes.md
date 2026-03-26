@@ -12,3 +12,18 @@
   4. **Deploy the fine-tuned model**: TwelveLabs deploys the fine-tuned model to your environment.  
      Based on the evaluation results, you can retrain the model by repeating the cycle from the second step to improve its performance.
 - An **agent** is a system that leverages an AI model to interact with its environment to achieve a user-defined objective. It combines reasoning, planning, and the execution of actions (often via external tools) to fulfill tasks.
+
+## Agents Types
+
+| Agent Type          | Description                                                  | Key Characteristics                                   | Example Use Cases                          |
+| ------------------- | ------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------ |
+| Simple Reflex Agent | Acts only on current perception using condition-action rules | No memory, rule-based, fast                           | Thermostat, basic game bots                |
+| Model-Based Agent   | Maintains internal state to track the world                  | Has memory, handles partially observable environments | Self-driving cars (basic perception layer) |
+| Goal-Based Agent    | Chooses actions to achieve specific goals                    | Planning, decision-making                             | Navigation systems, robotics               |
+| Utility-Based Agent | Maximizes a utility (preference) function                    | Handles trade-offs, optimization                      | Recommendation systems, finance AI         |
+| Learning Agent      | Improves performance through experience                      | Adapts over time, uses feedback                       | Chatbots, ML systems, fraud detection      |
+| Reactive Agent      | Responds immediately to stimuli without long-term reasoning  | Fast, no planning, event-driven                       | Reflex robots, real-time monitoring        |
+| Deliberative Agent  | Uses internal models to plan future actions                  | Slower, more accurate, reasoning-based                | Strategic planning systems                 |
+| Hybrid Agent        | Combines reactive and deliberative approaches                | Balanced speed and intelligence                       | Autonomous vehicles, advanced robotics     |
+| Multi-Agent System  | Multiple agents interacting or collaborating                 | Coordination, communication                           | Swarm robotics, distributed AI systems     |
+| Autonomous Agent    | Operates independently without human intervention            | Self-directed, adaptive                               | AI assistants, trading bots                |
