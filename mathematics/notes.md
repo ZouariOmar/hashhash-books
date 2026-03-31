@@ -10,3 +10,7 @@
 - This relationship is represented by the formula: `a²+b²=c²`
 
 ![Triangle](res/triangle.png)
+
+## Règle de Sarrus
+
+![Règle de Sarrus](res/règle-de-sarrus.png)
