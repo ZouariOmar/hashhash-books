@@ -1,18 +1,25 @@
 # Résolution numérique de systèmes d’équations linéaires Resume
 
-- **les méthodes de résolution pour des systèmes d’équations linéaires:**
-  ![les méthodes de résolution pour des systèmes d’équations linéaires](res/les-méthodes-de-résolution-pour-des-systèmes-d’équations-linéaires.png)
-- **Système d’équations linéaires:**
-  ![Définition - Système d’équations linéaires](res/système-d’équations-linéaires-def.png)
+## Introduction
 
-- **Forme matricielle d’un système linéaire:**
-  ![Forme matricielle d’un système linéaire](res/forme-matricielle-d’un-système-linéaire.png)
+### les méthodes de résolution pour des systèmes d’équations linéaires
 
-- **Existence des solutions:**
-  ![Existence des solutions](res/existence-des-solutions.png)
+![les méthodes de résolution pour des systèmes d’équations linéaires](res/les-méthodes-de-résolution-pour-des-systèmes-d’équations-linéaires.png)
+
+### Système d’équations linéaires
+
+![Définition - Système d’équations linéaires](res/système-d’équations-linéaires-def.png)
+
+### Forme matricielle d’un système linéaire
+
+![Forme matricielle d’un système linéaire](res/forme-matricielle-d’un-système-linéaire.png)
+
+### Existence des solutions
+
+![Existence des solutions](res/existence-des-solutions.png)
 
 > [!NOTE]
-> (A) matrice carrée, si $\det(A) \neq 0$ ⇔
+> (A) matrice carrée, si $\det(A) \neq 0$ $\Leftrightarrow$
 >
 > - $A$ est **inversible**
 > - le système linéaire $(S)$ est un **système de Cramer**
@@ -25,14 +32,14 @@
 
 ### Normes vectorielles
 
-Une norme sur $\mathbb{R}^n$ est une application $||\cdot||: \mathbb{R}^n \to \mathbb{R}^+$ satisfaisant les propriétés suivantes:
+Une norme sur $\mathbb{R}^n$ est une application $\lVert \cdot \rVert: \mathbb{R}^n \to \mathbb{R}^+$ satisfaisant les propriétés suivantes:
 
 1. (**Définie positivité**) : pour tout $x \in \mathbb{R}^n$,
-   $||x|| = 0 \Rightarrow x = 0_{\mathbb{R}^n}$
+   $\lVert x \rVert = 0 \Rightarrow x = 0_{\mathbb{R}^n}$
 2. (**Homogénéité**) : pour tout $x \in \mathbb{R}^n$, pour tout $\lambda \in \mathbb{R}$,
-   $||\lambda x|| = |\lambda|.||x||$
+   $\lVert \lambda x \rVert = |\lambda|.\lVert x \rVert$
 3. (**Inégalité triangulaire**) : pour tous $x, y \in \mathbb{R}^n$,
-   $||x + y|| \leq ||x|| + ||y||$
+   $\lVert x + y \rVert \leq \lVert x \rVert + \lVert y \rVert$
 
 Les normes vectorielles usuelles que l’on utilisera le plus souvent sont:
 
@@ -40,16 +47,16 @@ Soit $x = (x_i)_{1 \le i \le n} \in \mathbb{R}^n$ :
 
 - **Norme 1 (norme de Manhattan)** :
   $$
-  \|x\|_1 = \sum_{i=1}^{n} |x_i| = |x_1| + |x_2| + \cdots + |x_n|
+  \lVert x \rVert_1 = \sum_{i=1}^{n} |x_i| = |x_1| + |x_2| + \cdots + |x_n|
   $$
 - **Norme euclidienne (norme 2)** :
   $$
-  \|x\|_2 = \left( \sum_{i=1}^{n} |x_i|^2 \right)^{1/2}
+  \lVert x \rVert_2 = \left( \sum_{i=1}^{n} |x_i|^2 \right)^{1/2}
   = \sqrt{|x_1|^2 + |x_2|^2 + \cdots + |x_n|^2}
   $$
 - **Norme infinie (norme du sup)** :
   $$
-  \|x\|_\infty = \max_{1 \le i \le n} |x_i|
+  \lVert x \rVert_\infty = \max_{1 \le i \le n} |x_i|
   = \max \{ |x_1|, |x_2|, \cdots, |x_n| \}
   $$
 
@@ -57,44 +64,44 @@ Soit $x = (x_i)_{1 \le i \le n} \in \mathbb{R}^n$ :
 
 #### Définition d’une norme matricielle
 
-On appelle norme matricielle sur $\mathbb{R}^n$ toute application $||\cdot||$ définie sur $\mathbb{R}^n$ à valeurs dans $\mathbb{R}^+$, vérifiant pour tout $A, B \in \mathcal{M}_n(\mathbb{R})$, et pour tout $\lambda \in \mathbb{R}$:
+On appelle norme matricielle sur $\mathbb{R}^n$ toute application $\lVert \cdot \rVert$ définie sur $\mathbb{R}^n$ à valeurs dans $\mathbb{R}^+$, vérifiant pour tout $A, B \in \mathcal{M}_n(\mathbb{R})$, et pour tout $\lambda \in \mathbb{R}$:
 
-1. $||A|| = 0 \Rightarrow A = O_n$, où $O_n$ est la matrice nulle d’ordre $n$
-2. $||\lambda A|| = ||\lambda||.||A||$
-3. $||A + B|| \leq ||A|| + ||B||$
-4. $||AB|| \leq ||A||.||B||$
+1. $\lVert A \rVert = 0 \Rightarrow A = O_n$, où $O_n$ est la matrice nulle d’ordre $n$
+2. $\lVert \lambda A \rVert = \lVert \lambda \rVert.\lVert A \rVert$
+3. $\lVert A + B \rVert \leq \lVert A \rVert + \lVert B \rVert$
+4. $\lVert AB \rVert \leq \lVert A \rVert.\lVert B \rVert$
 
 #### Définition d’une norme matricielle subordonnées
 
 Toute norme vectorielle de $\mathbb{R}^n$ définit une norme matricielle de la façon suivante:
 
-$
+$$
 \forall A \in \mathcal{M}_n(\mathbb{R}), \quad
-||A|| = \sup_{x \in \mathbb{R}^n, x \neq 0} \frac{||Ax||}{||x||}
-= \sup_{||x|| = 1} ||Ax||
-$
+\lVert A \rVert = \sup_{x \in \mathbb{R}^n, x \neq 0} \frac{\lVert Ax \rVert}{\lVert x \rVert}
+= \sup_{\lVert x \rVert = 1} \lVert Ax \rVert
+$$
 
 est dite **norme matricielle subordonnée** (ou **induite à une norme vectorielle**).
-On notera $||\cdot||_p$ la norme matricielle subordonnée associée à la norme vectorielle d’indice $p$, avec $p = 1, 2, \infty$.
+On notera $\lVert \cdot \rVert_p$ la norme matricielle subordonnée associée à la norme vectorielle d’indice $p$, avec $p = 1, 2, \infty$.
 
 #### Normes matricielles usuelles
 
 > [!NOTE]
 > Soit $A \in \mathbb{R}^{n\times n}$.
 >
-> - $||A||_{1} = \displaystyle \sup_{x \neq 0} \frac{||Ax||_{1}}{||x||_{1}} = \max_{j} \sum_{i} |a_{ij}|$
+> - $\lVert A \rVert_{1} = \displaystyle \sup_{x \neq 0} \frac{\lVert Ax \rVert_{1}}{\lVert x \rVert_{1}} = \max_{j} \sum_{i} |a_{ij}|$
 >   (somme maximale des **colonnes**)
-> - $||A||_{\infty} = \displaystyle \sup_{x \neq 0} \frac{||Ax||_{\infty}}{||x||_{\infty}} = \max_{i} \sum_{j} |a_{ij}|$
+> - $\lVert A \rVert_{\infty} = \displaystyle \sup_{x \neq 0} \frac{\lVert Ax \rVert_{\infty}}{\lVert x \rVert_{\infty}} = \max_{i} \sum_{j} |a_{ij}|$
 >   (somme maximale des **lignes**)
-> - $||A||_{2} = \sqrt{\rho(AA^{\top})}$
+> - $\lVert A \rVert_{2} = \sqrt{\rho(AA^{\top})}$
 >   où $\rho(B) = \max{|\lambda|; \lambda \text{ valeur propre de } B}$ et $\rho$ rayon spectral
 >
 > **Cas particulier :**
 >
 > - Si $A$ est **symétrique** ($A = A^{\top}$) :
->   $
+>   $$
 >   |A|_{2} = \sqrt{\rho(A^2)} = |\lambda_{\max}| = \rho(A)
->   $
+>   $$
 >   (la norme 2 est la **plus grande valeur absolue des valeurs propres** de $A$)
 
 > [!INFO]
@@ -102,7 +109,7 @@ On notera $||\cdot||_p$ la norme matricielle subordonnée associée à la norme 
 >
 > - On dit que $\lambda$ est une **valeur propre** de $A$ s’il existe un vecteur
 >   $v \in \mathbb{R}^n$, avec $v \neq 0$, tel que: $Av = \lambda v$
-> - $\lambda$ est une **valeur propre** de $A$ ⇔
+> - $\lambda$ est une **valeur propre** de $A$ $\Leftrightarrow$
 >   $\lambda$ est solution de l’équation: $\det(A - \lambda I_n) = 0$
 
 ## Méthode du pivot de Gauss
@@ -141,7 +148,7 @@ On appelle **mineur principal** $M_{p,p}$ de $A$ le déterminant de la sous-matr
    $$
    \begin{cases}
    LY = b
-   \newline
+   \\
    UX = Y
    \end{cases}
    $$
@@ -150,7 +157,7 @@ On appelle **mineur principal** $M_{p,p}$ de $A$ le déterminant de la sous-matr
 
 Soit $A$ une matrice dont tous **les mineurs principaux sont non nuls**.
 
-- Alors il $\exist$ deux matrices $L$ et $U$ telles que:
+- Alors il $\exists$ deux matrices $L$ et $U$ telles que:
   - $L$ est **triangulaire inférieure** avec des coefficients diagonaux égaux à $1$
   - $U$ est **triangulaire supérieure**
 - vérifiant:
