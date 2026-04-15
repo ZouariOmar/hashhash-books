@@ -18,3 +18,6 @@
 - [Using .env to store environment variables in Angular](https://medium.com/@desinaoluseun/using-env-to-store-environment-variables-in-angular-20c15c7c0e6a)
 - [Configuring application environments](https://angular.dev/tools/cli/environments)
 - [Essential Angular SSR Config To Deploy On Vercel](https://dev.to/this-is-angular/essential-angular-ssr-config-to-deploy-on-vercel-2lka)
+- [Integration Basics: Integrating BabylonJS 3D Engine Into An Angular Business Application – Part 1](https://www.thinktecture.com/en/babylonjs/babylon-angular-basic-integration)
+- [Folder Structure of Angular Project](https://www.geeksforgeeks.org/angular-js/folder-structure-of-angular-project)
+- [Structurer et organiser son application](https://angular.fr/modules/structure)
