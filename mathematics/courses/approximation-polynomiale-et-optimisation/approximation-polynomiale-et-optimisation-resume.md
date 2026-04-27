@@ -177,12 +177,38 @@ $$
 h_\theta(x_i) = \theta_1 x_i + \theta_0
 $$
 
-On définit la fonction coût (erreur quadratique moyenne - **MSE**):
+### Fonction coût
+
+On définit d’abord la **SSE (Sum of Squared Errors)**:
+
+$$
+\text{SSE}(\theta_0, \theta_1)
+= \sum_{i=1}^{n} \left( h_\theta(x_i) - y_i \right)^2
+$$
+
+Puis, la **MSE (Mean Squared Error)**:
+
+$$
+\text{MSE}(\theta_0, \theta_1)
+= \frac{1}{n} \sum_{i=1}^{n} \left( h_\theta(x_i) - y_i \right)^2
+$$
+
+Enfin, la fonction coût (**Cost/Loss function**) utilisée pour la descente de gradient :
 
 $$
 \boxed{
 J(\theta_0, \theta_1)
 = \frac{1}{2n} \sum_{i=1}^{n} \left( h_\theta(x_i) - y_i \right)^2
+}
+$$
+
+> - SSE mesure l’erreur totale
+> - MSE est la moyenne de cette erreur
+> - Le facteur $\frac{1}{2}$ dans $J$ est ajouté pour simplifier les dérivées lors de l’optimisation
+
+$$
+\boxed{
+J = \frac{1}{2} \times \text{MSE} = \frac{1}{2n} \times \text{SSE}
 }
 $$
 
@@ -197,6 +223,27 @@ $$
 $$
 
 où $\alpha > 0$ est le taux d’apprentissage.
+
+#### Taux d’apprentissage $\alpha$ (learning rate)
+
+- $\alpha$ contrôle la taille du pas lors de la mise à jour des paramètres
+- C’est un hyperparamètre, il n’est pas appris par le modèle
+- Il n’existe pas de méthode exacte pour trouver le meilleur $\alpha$
+- En pratique, le choix de $\alpha$ se fait généralement par essais et erreurs (**tuning**)
+
+#### Effet du choix de $\alpha$
+
+- $\alpha$ trop petit: convergence lente
+- $\alpha$ trop grand: divergence ou oscillations
+- $\alpha$ bien choisi: convergence stable et rapide
+
+#### Valeurs usuelles
+
+$$
+\alpha \in \{0.1,\; 0.01,\; 0.001,\; 0.0001\}
+$$
+
+$\blacktriangleright$ Des méthodes comme **Adagrad**, **RMSProp** et **Adam** permettent d’adapter automatiquement le taux d’apprentissage pendant l’entraînement.
 
 ### Forme vectorielle générale
 
