@@ -26,13 +26,17 @@ $$
 Le polynôme $P_n$ s’exprime comme suit:
 
 $$
+\fbox{$
 P_n(x) = \sum_{i=0}^{n} y_i L_i(x), \quad x \in \mathbb{R}
+$}
 $$
 
 où
 
 $$
+\fbox{$
 L_i(x) = \prod_{\substack{j=0 \ j \ne i}}^{n} \frac{x - x_j}{x_i - x_j}
+$}
 $$
 
 La famille de polynômes de Lagrange $\{L_0, L_1, \cdots, L_n\}$ associés aux points $(x_i, y_i)$, $i \in \{0, \cdots, n\}$, est une base de l’espace vectoriel $\mathbb{R}_n[X]$.
@@ -81,8 +85,10 @@ $$
 Le polynôme Pn s’exprime comme suit:
 
 $$
+\fbox{$
 P_n(x) =
 \sum_{i=0}^{n} \beta_i \omega_i(x), \quad x \in \mathbb{R}
+$}
 $$
 
 $$
