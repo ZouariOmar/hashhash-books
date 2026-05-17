@@ -65,6 +65,30 @@ Les principaux principes de test sont :
 | Tests de performance              | Mesurent la rapidité, la stabilité et la charge                   | Évaluer les performances du système                       |
 | Tests de sécurité                 | Vérifient la protection contre les attaques et failles            | Garantir la sécurité du système                           |
 
+## Métiers et rôles QA
+
+| Métier                      | Rôles / Responsabilités                                                                                               |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Analyste de test            | Analyse des besoins, rédaction des cas de test, préparation des données, validation fonctionnelle, couverture de test |
+| Analyste technique          | Analyse technique, étude des APIs et bases de données, support technique QA, analyse des impacts techniques           |
+| Gestionnaire des événements | Supervision des alertes, gestion des incidents, escalade, suivi des SLA, coordination des interventions               |
+| Architecte de test          | Définition de la stratégie QA, conception des frameworks de test, choix des outils, architecture d’automatisation     |
+| Chef de projet de test      | Pilotage des campagnes de test, gestion d’équipe QA, suivi des risques, reporting, coordination projet                |
+| Testeur                     | Exécution des tests, détection des anomalies, déclaration des bugs, validation des corrections, tests de régression   |
+
+## Les anomalies
+
+| Terme                   | Définition                                                                                               |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| Bug                     | Erreur ou défaut dans un logiciel provoquant un comportement inattendu ou incorrect.                     |
+| Crash applicatif        | Arrêt brutal ou fermeture inattendue d’une application.                                                  |
+| Faute de mémoire        | Problème lié à la gestion de la mémoire (mémoire insuffisante, accès invalide, fuite mémoire…).          |
+| Vulnérabilité           | Faiblesse de sécurité pouvant être exploitée par un attaquant.                                           |
+| Faute de segmentation   | Erreur causée par un accès interdit à une zone mémoire (`Segmentation Fault`).                           |
+| Buffer Overflow         | Dépassement de capacité d’un buffer mémoire pouvant écraser des données ou exécuter du code malveillant. |
+| Deadlock / Interblocage | Situation où plusieurs processus se bloquent mutuellement et ne peuvent plus continuer.                  |
+| Timeout                 | Dépassement du temps maximal d’attente pour une opération ou une réponse système.                        |
+
 ## Conclusion
 
 Le test logiciel est une étape essentielle du développement qui permet d’assurer la **qualité**, la **fiabilité** et la **conformité** d’un système informatique à ses exigences.
