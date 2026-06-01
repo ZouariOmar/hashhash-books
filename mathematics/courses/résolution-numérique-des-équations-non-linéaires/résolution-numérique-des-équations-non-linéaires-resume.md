@@ -259,6 +259,8 @@ x_{n+1}
 =
 x_n-\dfrac{f(x_n)}{f'(x_n)}
 =
+x_n-\dfrac{b-a}{f(b)-f(a)}\,f(x_n)
+=
 g(x_n)
 \end{cases}
 $$
