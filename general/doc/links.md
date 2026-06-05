@@ -1,5 +1,11 @@
 # Links
 
+- [Links](#links)
+  - [Jira](#jira)
+  - [Cloud](#cloud)
+  - [Soft-skills](#soft-skills)
+  - [GitHub](#github)
+
 - [cp-algorithms.com](https://cp-algorithms.com)
 - [dotnettutorials.net](https://dotnettutorials.net)
 - [Why Some Projects Use Multiple Programming Languages](www.youtube.com/watch?v=XJC5WB2Bwrc)
@@ -19,3 +25,9 @@
 ## Soft-skills
 
 - [5 Presentation Tips for Students w/Templates](https://www.youtube.com/watch?v=cEIyV-fTQ5Y)
+
+## GitHub
+
+- [Contributor Covenant](https://www.contributor-covenant.org)
+- [CONTRIBUTING.MD Example](https://contributing.md/example)
+- [CODEOWNERS](https://codeowners.org)

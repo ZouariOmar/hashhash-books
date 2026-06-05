@@ -1,8 +1,8 @@
-# 🌀 Git Flow (Structured Workflow)
+# Git Flow (Structured Workflow)
 
 **Git Flow** is a well-organized branching strategy, especially suited for larger teams or release-driven projects.
 
-## 📚 Overview of Branches
+## Overview of Branches
 
 | Branch      | Purpose                             |
 | ----------- | ----------------------------------- |
@@ -13,7 +13,7 @@
 | `hotfix/*`  | Emergency fixes to production       |
 | `docs/*`    | Documentation updates               |
 
-## 🔁 Workflow Steps
+## Workflow Steps
 
 ### 1. Start from `develop`
 
@@ -66,7 +66,7 @@ git checkout -b hotfix/1.0.1 main
 # Merge into both main and develop
 ```
 
-## ✅ Git Flow Summary
+## Git Flow Summary
 
 | Branch      | Example              | Description                             |
 | ----------- | -------------------- | --------------------------------------- |
@@ -76,18 +76,18 @@ git checkout -b hotfix/1.0.1 main
 | `release/*` | `release/2.0.0`      | Prepping for an upcoming release        |
 | `hotfix/*`  | `hotfix/2.0.1`       | Quick patch to production, post-release |
 
-## 🔧 When to Use Git Flow
+## When to Use Git Flow
 
-| Project Type              | Git Flow Suitability    |
-| ------------------------- | ----------------------- |
-| Solo project              | ❌ Overkill             |
-| Small agile team          | ✅ Optional             |
-| Mid-large release teams   | ✅✅ Recommended        |
-| Regulated enterprise code | ✅✅ Highly Recommended |
+| Project Type              | Git Flow Suitability |
+| ------------------------- | -------------------- |
+| Solo project              | Overkill             |
+| Small agile team          | Optional             |
+| Mid-large release teams   | Recommended          |
+| Regulated enterprise code | Highly Recommended   |
 
-> 📝 **Note**: Use tools like [Git Flow CLI](https://github.com/nvie/gitflow) or Git GUI integrations (like Sourcetree) to automate this process.
+> **Note**: Use tools like [Git Flow CLI](https://github.com/nvie/gitflow) or Git GUI integrations (like Sourcetree) to automate this process.
 
-## 📝 TL;DR
+## TL;DR
 
 - Use develop if you're following Git Flow or want better clarity.
 - Use dev only if you're sure your team/project prefers a simpler name.

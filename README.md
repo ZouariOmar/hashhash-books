@@ -1,35 +1,21 @@
-<!-- PROJECT SHIELDS -->
-
-[![Contributors](https://img.shields.io/badge/CONTRIBUTORS-01-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/graphs/contributors)
-[![Forks](https://img.shields.io/badge/FORKS-00-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/network/members)
-[![Stargazers](https://img.shields.io/badge/STARS-03-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/stargazers)
-[![Issues](https://img.shields.io/badge/ISSUES-00-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/issues)
+[![Contributors](https://img.shields.io/badge/CONTRIBUTORS-01-blue?style=plastic)](https://github.com/zouari-oss/hashhash-books/graphs/contributors)
+[![Forks](https://img.shields.io/badge/FORKS-01-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/network/members)
+[![Stargazers](https://img.shields.io/badge/STARS-04-blue?style=plastic)](https://github.com/zouari-oss/hashhash-books/stargazers)
+[![Issues](https://img.shields.io/badge/ISSUES-00-blue?style=plastic)](https://github.com/zouari-oss/hashhash-books/issues)
 [![GPL3.0 License](https://img.shields.io/badge/LICENSE-GPL3.0-blue?style=plastic)](LICENSE)
-[![Linkedin](https://img.shields.io/badge/Linkedin-6.4k-blue?style=plastic)](https://www.linkedin.com/in/zouari-omar-143239283)
+[![Linkedin](https://img.shields.io/badge/Linkedin-7.1k-blue?style=plastic)](https://www.linkedin.com/in/zouari-omar)
 
-<!-- PROJECT HEADER -->
-<h1 align="center">
-  <br>
-  <a href="https://github.com/ZouariOmar/HashHashBooks"><img src="doc/imgs/logo.png" alt="HashHashBooks" width="200"></a>
-  <br>
-  HashHashBooks
-  <br>
-</h1>
+<div align="center">
+  <img src="doc/imgs/logo.png" width="200" alt="HashHashBooks" />
+</div>
 
-<h4 align="center">A curated collection of programming books and Notes</h4>
+<h1 align="center">HashHashBooks</h1>
 
-<!-- PROJECT LINKS -->
-<p align="center">
-  <a href="#hashhashbooks">HashHashBooks</a> •
-  <a href="#about-the-project">About the Project</a> •
-  <a href="#categories">Categories</a> •
-  <a href="#how-to-use">How to Use</a> •
-  <a href="#contributions">Contributions</a> •
-  <a href="#license">License</a> •
-  <a href="#contact">Contact</a>
-</p>
+<h4 align="center">
+  A curated collection of programming books and Notes
+</h4>
 
-<!-- PROJECT TAGS -->
+<div align="center">
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -40,9 +26,19 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-## HashHashBooks
+</div>
 
-Welcome to **HashHashBooks**, a curated collection of programming books and notes to help developers of all levels master coding concepts, improve their skills, and stay updated with the latest technologies.
+- [HashHashBooks](#hashhashbooks)
+- [About the Project](#about-the-project)
+- [Categories](#categories)
+- [How to Use](#how-to-use)
+- [Contributions](#contributions)
+- [License](#license)
+- [Contact](#contact)
+
+## Overview
+
+**HashHashBooks** is a curated collection of programming books and notes to help developers of all levels master coding concepts, improve their skills, and stay updated with the latest technologies.
 
 ## About the Project
 
@@ -113,7 +109,7 @@ For questions or suggestions, feel free to reach out:
 
 - **GitHub**: [ZouariOmar](https://github.com/ZouariOmar)
 - **Email**: [zouariomar20@gmail.com](mailto:zouariomar20@gmail.com)
-- **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar-143239283/)
+- **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar)
 
 ---
 

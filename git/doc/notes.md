@@ -1,5 +1,9 @@
 # Git Notes
 
+- [Git Notes](#git-notes)
+  - [How to refresh gitignore?](#how-to-refresh-gitignore)
+  - [Things to note to do when making changes to `.gitignore` file](#things-to-note-to-do-when-making-changes-to-gitignore-file)
+
 ## How to refresh gitignore?
 
 - After creating a `.gitignore` file in your repository and setting patterns to match files which you do not want Git to track, Git starts tracking repository files and respecting the patterns set in the `.gitignore` file after you run the git add command (For example `git add .`).
