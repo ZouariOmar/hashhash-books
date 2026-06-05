@@ -6,16 +6,12 @@
 [![Linkedin](https://img.shields.io/badge/Linkedin-7.1k-blue?style=plastic)](https://www.linkedin.com/in/zouari-omar)
 
 <div align="center">
-  <img src="doc/imgs/logo.png" width="200" alt="HashHashBooks" />
-</div>
 
-<h1 align="center">HashHashBooks</h1>
+<img src="doc/imgs/logo.png" width="200" alt="HashHashBooks" />
 
-<h4 align="center">
-  A curated collection of programming books and Notes
-</h4>
+<h1>HashHashBooks</h1>
 
-<div align="center">
+<h4>A curated collection of programming books and Notes</h4>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -107,6 +103,7 @@ This repository is licensed under the **GPL License**. You are free to use, modi
 
 For questions or suggestions, feel free to reach out:
 
+- GitLab: [ZouariOmar](https://gitlab.com/ZouariOmar)
 - **GitHub**: [ZouariOmar](https://github.com/ZouariOmar)
 - **Email**: [zouariomar20@gmail.com](mailto:zouariomar20@gmail.com)
 - **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar)
