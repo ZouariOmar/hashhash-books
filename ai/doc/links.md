@@ -1,5 +1,16 @@
 # Links
 
+- [Links](#links)
+  - [Articles](#articles)
+  - [Models](#models)
+  - [Datasets](#datasets)
+  - [Tools](#tools)
+  - [Face Recognition](#face-recognition)
+  - [Audio and Image Models](#audio-and-image-models)
+  - [Official Websites](#official-websites)
+
+## Articles
+
 - [AI Agents Cheat Sheet](https://www.datacamp.com/cheat-sheet/ai-agents-cheat-sheet)
 - [What is Fine-Tuning?](https://www.geeksforgeeks.org/deep-learning/what-is-fine-tuning)
 - [Transformers Pipeline](https://www.geeksforgeeks.org/deep-learning/transformers-pipeline)
@@ -8,15 +19,25 @@
 - [Summary of the tokenizers](https://huggingface.co/docs/transformers/en/tokenizer_summary)
 - [Using HuggingFace datasets for NLP Projects](https://www.geeksforgeeks.org/nlp/accessing-huggingface-datasets-for-nlp-experiments)
 - [ReAct Prompting](https://www.promptingguide.ai/techniques/react)
+- [anthropic research](https://www.anthropic.com/research)
+
+## Models
+
+- [distilbert/distilbert-base-cased](https://huggingface.co/distilbert/distilbert-base-cased)
+- [insightface](https://github.com/deepinsight/insightface)
+
+## Datasets
+
+- [jonathanli/law-stack-exchange](https://huggingface.co/datasets/jonathanli/law-stack-exchange)
 
 ## Tools
 
 - [UV - Python package and project manager](https://docs.astral.sh/uv/)
+- [Puter.js - free, serverless, Cloud and AI directly to your frontend JavaScript with no backend code or API keys required](https://docs.puter.com)
 
 ## Face Recognition
 
 - [Face Recognition System using LBPH Algorithm](https://karthikeyan-pcp.medium.com/face-recognition-system-using-lbph-algorithm-3145b4820646)
-- [insightface](https://github.com/deepinsight/insightface)
 
 ## Audio and Image Models
 
@@ -32,7 +53,3 @@
 
 - [Hugging Face](https://huggingface.co)
 - [Gradio](https://www.gradio.app)
-
-## Research & Articles
-
-- [anthropic research](https://www.anthropic.com/research)

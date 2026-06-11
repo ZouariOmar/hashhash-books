@@ -19,3 +19,19 @@
   3. Run `git add .` command
   4. `git commit -m "Commit message"` or just git commit or continue working.
 - What is really important here is step 2. And remember to just run git add . command before doing any commit.
+
+## Git Security
+
+- To enable credential storage, Run one of these:
+
+Cache temporarily (recommended for dev machines)
+
+```bash
+git config --global credential.helper cache
+```
+
+OR store permanently (less secure, but simple)
+
+```bash
+git config --global credential.helper store
+```

@@ -27,3 +27,7 @@
 | Hybrid Agent        | Combines reactive and deliberative approaches                | Balanced speed and intelligence                       | Autonomous vehicles, advanced robotics     |
 | Multi-Agent System  | Multiple agents interacting or collaborating                 | Coordination, communication                           | Swarm robotics, distributed AI systems     |
 | Autonomous Agent    | Operates independently without human intervention            | Self-directed, adaptive                               | AI assistants, trading bots                |
+
+## Prompt Engineering
+
+- `prompt = instruction + context + constraint`
