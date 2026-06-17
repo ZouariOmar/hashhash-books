@@ -3,16 +3,6 @@
 - [What is a Server? Servers vs Desktops Explained](https://www.youtube.com/watch?v=UjCDWCeHCzY)
 - [DNS Explained in 100 Seconds](https://www.youtube.com/watch?v=UVR9lhUGAyU)
 
-## DHCP
-
-- [What is DHCP and How Does it Work? | Network Essentials](https://www.youtube.com/watch?v=ldtUSSZJCGg&t=106s)
-- [Understanding the Basic Operations of DHCP](https://www.netmanias.com/en/post/techdocs/5998/dhcp-network-protocol/understanding-the-basic-operations-of-dhcp)
-
-## ARP
-
-- [ARP (Address Resolution Protocol) explained](https://networklessons.com/ip-services/arp-address-resolution-protocol-explained)
-- [ARP Explained | Address Resolution Protocol](https://www.youtube.com/watch?v=tXzKjtMHgWI)
-
 ## Subnetting
 
 - [let’s subnet your home network // You SUCK at subnetting // EP 6](https://www.youtube.com/watch?v=mJ_5qeqGOaI)
@@ -33,3 +23,17 @@
 
 - [GNS3 Creating a Virtual Lab - ISP creation](https://www.youtube.com/watch?v=L2wAZ4jUC5M)
 - [GNS3 Tutorial for Beginners](https://youtube.com/playlist?list=PLZURQ_XyXLwB5BUDb18M9btWX0WWUNXMR&si=rLxfIZIlw0CITplr)
+
+## Protocols
+
+- [Server-sent events (sse)](https://en.wikipedia.org/wiki/Server-sent_events)
+
+### DHCP
+
+- [What is DHCP and How Does it Work? | Network Essentials](https://www.youtube.com/watch?v=ldtUSSZJCGg&t=106s)
+- [Understanding the Basic Operations of DHCP](https://www.netmanias.com/en/post/techdocs/5998/dhcp-network-protocol/understanding-the-basic-operations-of-dhcp)
+
+### ARP
+
+- [ARP (Address Resolution Protocol) explained](https://networklessons.com/ip-services/arp-address-resolution-protocol-explained)
+- [ARP Explained | Address Resolution Protocol](https://www.youtube.com/watch?v=tXzKjtMHgWI)
