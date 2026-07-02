@@ -1,4 +1,4 @@
-# Notes
+# Bash Notes
 
 - `#!/usr/bin/bash`: This is a _shebang_ line that specifies the path to the Bash interpreter. It indicates that the script should be executed using Bash.
 - `echo -n "Enter Number: "`: This line prints the prompt “Enter Number: ” without a newline character (`-n` option). It waits for the user to enter a number.
@@ -65,3 +65,30 @@ Terminal emulation is software that emulates the function of a terminal. It allo
 | `\@`              | Current time                               |
 | `\u`              | Current username                           |
 | `\w`              | Full path of the current working directory |
+
+## Tips
+
+### `$*` vs `$@`
+
+- `$*` expands to **a single argument** with all the elements delimited by spaces (actually the first character of `$IFS`).
+- `$@` expands to **multiple arguments**.
+- For example
+
+```bash
+# !/bin/bash
+# /tmp/test 1  2 "3  4"
+
+echo "With *:"
+for arg in "$*"; do echo "<$arg>"; done
+
+echo "With @:"
+for arg in "$@"; do echo "<$arg>"; done
+
+# Output
+# With *:
+# <1 2 3  4>
+# With @:
+# <1>
+# <2>
+# <3  4>
+```
