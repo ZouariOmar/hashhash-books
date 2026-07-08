@@ -3,6 +3,7 @@
 - [AWS (Amazone Web Service) Links](#aws-amazone-web-service-links)
   - [Official](#official)
   - [Docs](#docs)
+  - [SDK](#sdk)
   - [Articles and Blogs](#articles-and-blogs)
   - [Videos](#videos)
   - [Tools](#tools)
@@ -11,6 +12,7 @@
 
 - [aws.amazon - website](https://aws.amazon.com)
 - [Amazon Web Services - youtube](https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg)
+- [aws.github](https://github.com/aws)
 
 ## Docs
 
@@ -30,6 +32,23 @@
 - [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure)
 
 - [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+- [Amazon Machine Images in Amazon EC2 (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
+- [AWS Elastic Block Store(EBS)](https://www.geeksforgeeks.org/devops/introduction-to-aws-elastic-block-storeebs)
+- [Use Elastic Load Balancing to distribute incoming application traffic in your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html)
+- [Migration and transfer](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html)
+- [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html)
+- [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+- [Logging and monitoring in AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/security-logging-and-monitoring.html)
+  - [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
+  - [What Is AWS CloudTrail?](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+- [Amazon Simple Notification Service Examples](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sns-examples.html)
+- [Backup and recovery using AWS Backup](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/aws-backup.html)
+- [Amazon CloudWatch tutorials](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-tutorials.html)
+- [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)
+
+## SDK
+
+- [Boto3 documentation](https://docs.aws.amazon.com/boto3/latest)
 
 ## Articles and Blogs
 
@@ -40,6 +59,11 @@
 - [Simplified Bring-Your-Own-License experience using AWS License Manager](https://aws.amazon.com/blogs/mt/simplified-byol-experience-using-aws-license-manager)
 - [Cost Optimization with AWS](https://aws.amazon.com/aws-cost-management/cost-optimization)
 - [AWS Database Migration Service (DMS)](https://www.geeksforgeeks.org/devops/aws-database-migration-service)
+- [AWS ECS VS EKS](https://www.geeksforgeeks.org/cloud-computing/aws-ecs-vs-eks)
+- [Elastic Load Balancer in AWS](https://www.geeksforgeeks.org/machine-learning/elastic-load-balancer-in-aws)
+- [Understanding Auto Scaling And Load Balancing Integration In AWS](https://www.geeksforgeeks.org/devops/understanding-auto-scaling-and-load-balancing-integration-in-aws)
+- [AWS RDS vs AWS EC2 – Benefits, Limitations, And Tradeoffs](https://www.eginnovations.com/blog/how-to-choose-between-aws-rds-and-ec2-hosted-database)
+- [HANDS ON GUIDE TO AWS ROLE AND PERMISSIONS (STS ASSUME ROLE)](https://dev.to/josephhonpah/hands-on-guide-to-aws-role-and-permissions-sts-assume-role-3k0g)
 
 ## Videos
 

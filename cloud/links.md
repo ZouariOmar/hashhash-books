@@ -8,6 +8,7 @@
 - [What is IaaS?](https://www.redhat.com/en/topics/cloud-computing/what-is-iaas)
 - [What is PaaS?](https://www.redhat.com/en/topics/cloud-computing/what-is-paas)
 - [What is SaaS?](https://www.redhat.com/en/topics/cloud-computing/what-is-saas)
+- [What is Database as a Service (DBaaS)?](https://www.liquibase.com/blog/what-is-database-as-a-service-dbaas)
 - [IaaS vs. PaaS vs. SaaS](https://www.redhat.com/en/topics/cloud-computing/iaas-vs-paas-vs-saas)
 - [What is serverless computing?](https://www.ibm.com/think/topics/serverless)
 - [Cloud Deployment Models](https://www.geeksforgeeks.org/computer-science-fundamentals/cloud-deployment-models)
@@ -16,3 +17,5 @@
 - [Biggest Cloud Providers Compared: AWS vs Azure vs GCP](https://artempolynko.com/blog/top-cloud-providers-compared)
 - [What Is Cloud Economics? The Ultimate Guide](https://www.oracle.com/apac/cloud/cloud-economics-explained)
 - [Server vs. Serverless Architecture](https://www.geeksforgeeks.org/system-design/server-vs-serverless-architecture)
+- [What is high performance computing?](https://cloud.google.com/discover/what-is-high-performance-computing)
+- [Serverless Architecture](https://www.geeksforgeeks.org/system-design/serverless-architectures)

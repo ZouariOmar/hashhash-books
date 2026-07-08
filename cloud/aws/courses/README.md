@@ -4,6 +4,7 @@
   - [aws-cloud-practitioner-clf-c02](#aws-cloud-practitioner-clf-c02)
     - [understanding-cloud-computing](#understanding-cloud-computing)
     - [aws-concepts](#aws-concepts)
+    - [aws-cloud-technology-and-services](#aws-cloud-technology-and-services)
 
 ## aws-cloud-practitioner-clf-c02
 
@@ -18,3 +19,9 @@
 - chapter 1: introduction-to-aws
 - chapter 2: cloud-economics-and-global-infrastructure
 - chapter 3: the-core-aws-services
+
+### aws-cloud-technology-and-services
+
+- chapter 1: aws-compute-services
+- chapter 2: aws-databases-networking-and-storage
+- chapter 3: aws-machine-learning-ai-analytics-and-beyond
