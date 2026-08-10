@@ -1,0 +1,15 @@
+# Learning Platforms
+
+- [netacad](https://www.netacad.com)
+- [udemy](https://www.udemy.com)
+- [sololearn](https://www.sololearn.com)
+- [freecodecamp](https://www.freecodecamp.org)
+- [t3alem](https://t3alem.tn/?fbclid=IwAR28hKxnNqs2PJZEXuCJ7SaiB99M1DNZ5dWVXqTA36HAgbBxP60CGHOG-04)
+- [wfglobal](https://web.opportunity.wfglobal.org)
+- [datacamp](https://www.datacamp.com)
+- [coursera](https://www.coursera.org)
+- [Oracle](https://education.oracle.com)
+- [TryHackMe](https://tryhackme.com) [Free](https://tryhackme.com/resources/blog/free_path)
+- [HTB](https://hackthebox.com)
+- [w3schools](https://www.w3schools.com)
+- [Fortinet Training](https://training.fortinet.com)
