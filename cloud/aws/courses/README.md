@@ -25,3 +25,9 @@
 - chapter 1: aws-compute-services
 - chapter 2: aws-databases-networking-and-storage
 - chapter 3: aws-machine-learning-ai-analytics-and-beyond
+
+### aws-security-and-cost-management
+
+- chapter 1: introduction-to-aws-security-and-compliance
+- chapter 2: network-and-user-security
+- chapter 3: billing-and-cost-management

@@ -11,6 +11,7 @@
   - [A Virtual Private Cloud (VPC)](#a-virtual-private-cloud-vpc)
   - [Access Control List (ACL)](#access-control-list-acl)
   - [A Network Security Group (NSG)](#a-network-security-group-nsg)
+  - [Principle of Least Privilege (PoLP)](#principle-of-least-privilege-polp)
 
 ## General Data Protection Regulation (GDPR)
 
@@ -75,3 +76,12 @@ or computer
 - NSGs use parameters like **IP addresses**, **ports**, and **protocols** to
   _allow_ or _deny_ data packets.
 - They act as the first line of defense for your servers.
+
+## Principle of Least Privilege (PoLP)
+
+An information security concept stating that users, systems, and applications
+should only be granted the minimum level of access—or permissions—necessary
+to perform their authorized functions, and nothing more
+
+> [!NOTE]
+> Use groups to assign permissions, not individuals

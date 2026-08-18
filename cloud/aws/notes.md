@@ -49,6 +49,8 @@
     - [AWS Content Delivery Network (CDN) Services](#aws-content-delivery-network-cdn-services)
       - [CloudFront](#cloudfront)
     - [AWS VPC endpoints](#aws-vpc-endpoints)
+  - [AWS Security Services](#aws-security-services)
+    - [NACL, Firewall, and WAF](#nacl-firewall-and-waf)
   - [AWS Routing Policy](#aws-routing-policy)
     - [Simple routing policy](#simple-routing-policy)
     - [Failover routing policy](#failover-routing-policy)
@@ -58,6 +60,9 @@
     - [IP-based routing policy](#ip-based-routing-policy)
     - [Multivalue answer routing policy](#multivalue-answer-routing-policy)
     - [Weighted routing policy](#weighted-routing-policy)
+  - [AWS Billing and Cost Management](#aws-billing-and-cost-management)
+    - [Pricing Models](#pricing-models)
+    - [AWS support options](#aws-support-options)
 
 ## The 6 Pillars of AWS
 
@@ -484,6 +489,41 @@ flowchart LR
 - This keeps your data safely inside the Amazon network
 - You do not need public internet access or NAT gateways
 
+## AWS Security Services
+
+| Service                                      | Primary Purpose                               | Key Features                                                             | Common Use Cases                           |
+| -------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------ |
+| **AWS Identity and Access Management (IAM)** | Manage access to AWS resources                | Users, groups, roles, policies, MFA                                      | Authentication and authorization           |
+| **AWS Organizations**                        | Centrally manage multiple AWS accounts        | Service Control Policies (SCPs), account management                      | Multi-account governance                   |
+| **AWS Key Management Service (KMS)**         | Create and manage encryption keys             | Customer-managed keys, automatic rotation, integration with AWS services | Data encryption                            |
+| **AWS Secrets Manager**                      | Securely store and rotate secrets             | Automatic secret rotation, fine-grained access control                   | Managing database credentials, API keys    |
+| **AWS Certificate Manager (ACM)**            | Provision and manage SSL/TLS certificates     | Free public certificates, automatic renewal                              | HTTPS for websites and applications        |
+| **AWS Shield**                               | Protect against DDoS attacks                  | Standard and Advanced protection                                         | DDoS mitigation                            |
+| **AWS Web Application Firewall (WAF)**       | Protect web applications from common exploits | Rule-based filtering, bot control, rate limiting                         | Securing web applications and APIs         |
+| **AWS Firewall Manager**                     | Centrally manage firewall rules               | Centralized security policy management                                   | Enterprise-wide firewall administration    |
+| **Amazon GuardDuty**                         | Intelligent threat detection                  | Continuous monitoring, anomaly detection, ML-based findings              | Threat detection and security monitoring   |
+| **Amazon Inspector**                         | Automated vulnerability assessment            | EC2, Lambda, and container image scanning                                | Vulnerability management                   |
+| **Amazon Macie**                             | Discover and protect sensitive data           | Data classification, PII detection                                       | Data security and compliance               |
+| **AWS Security Hub**                         | Centralized security findings                 | Aggregates alerts, compliance checks, dashboards                         | Security posture management                |
+| **AWS Config**                               | Track resource configuration changes          | Configuration history, compliance evaluation                             | Configuration auditing and compliance      |
+| **AWS CloudTrail**                           | Record AWS API activity                       | API logging, event history, auditing                                     | Security auditing and forensic analysis    |
+| **Amazon CloudWatch**                        | Monitor AWS resources and applications        | Metrics, logs, alarms, dashboards                                        | Operational monitoring and security alerts |
+| **AWS Detective**                            | Investigate security findings                 | Visual investigation, log analysis                                       | Incident investigation                     |
+| **AWS Network Firewall**                     | Managed network firewall                      | Stateful inspection, intrusion prevention                                | Network traffic protection                 |
+| **AWS Verified Access**                      | Secure application access without VPN         | Identity-aware access, continuous verification                           | Zero Trust access                          |
+| **AWS Audit Manager**                        | Automate audit evidence collection            | Frameworks, evidence gathering, reporting                                | Compliance audits                          |
+| **AWS Artifact**                             | Access AWS compliance reports                 | Security certifications, audit reports                                   | Regulatory compliance documentation        |
+
+### NACL, Firewall, and WAF
+
+| Feature           | AWS Firewall                | NACL                  | AWS WAF                               |
+| ----------------- | --------------------------- | --------------------- | ------------------------------------- |
+| **Scope**         | Regional or VPC-level       | Subnet-level          | Application-level                     |
+| **Statefulness**  | Stateful                    | Stateless             | Stateful                              |
+| **Default Rules** | Managed rules available     | Deny unless allowed   | Allow, block, or count based on rules |
+| **Cost**          | Charged per usage           | No additional cost    | Charged per request & rules           |
+| **Best For**      | High-level security control | Broad network control | Protecting web applications           |
+
 ## AWS Routing Policy
 
 ### Simple routing policy
@@ -517,3 +557,26 @@ Use when you want Route 53 to respond to DNS queries with up to eight healthy re
 ### Weighted routing policy
 
 Use to route traffic to multiple resources in proportions that you specify. You can use weighted routing to create records in a private hosted zone.
+
+## AWS Billing and Cost Management
+
+### Pricing Models
+
+| Feature               | Pay-as-you-go      | Save when you commit | Pay less by using more |
+| --------------------- | ------------------ | -------------------- | ---------------------- |
+| Flexibility           | Very high          | Low                  | Medium                 |
+| Cost Savings          | No upfront savings | High savings         | Volume-based savings   |
+| Budget Predictability | Low                | High                 | Medium                 |
+
+### AWS support options
+
+| Feature                                | Basic        | Developer            | Business           | Enterprise         |
+| -------------------------------------- | ------------ | -------------------- | ------------------ | ------------------ |
+| **Pricing**                            | Free         | Pay-per-use          | Monthly fee        | Monthly fee        |
+| **Direct Access to Support Engineers** | —            | Yes (business hours) | Yes (24/7)         | Yes (24/7)         |
+| **24/7 Support**                       | —            | —                    | Yes                | Yes                |
+| **API Access**                         | —            | —                    | Yes                | Yes                |
+| **Support Channels**                   | Forums       | Email                | Email, Chat, Phone | Email, Chat, Phone |
+| **Response Times**                     | —            | < 24 hours           | < 1 hour           | < 15 minutes       |
+| **Training & Programs**                | Basic guides | —                    | Yes                | Yes                |
+| **Technical Account Manager (TAM)**    | —            | —                    | —                  | Yes                |

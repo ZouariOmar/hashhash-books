@@ -38,6 +38,9 @@
 - [Migration and transfer](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html)
 - [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html)
 - [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+- [Security, identity, and compliance](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html)
+- [What is AWS Billing and Cost Management?](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html)
+- [Management and governance](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/management-governance.html)
 - [Logging and monitoring in AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/security-logging-and-monitoring.html)
   - [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
   - [What Is AWS CloudTrail?](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
@@ -45,6 +48,13 @@
 - [Backup and recovery using AWS Backup](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/aws-backup.html)
 - [Amazon CloudWatch tutorials](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-tutorials.html)
 - [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)
+- [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#root-user-tasks)
+- [AWS Identity and Access Management Actions](https://docs.aws.amazon.com/IAM/latest/APIReference/API_Operations.html)
+
+### AWS CLI
+
+- [iam](https://docs.aws.amazon.com/cli/latest/reference/iam/#iam)
+- [cloudtrail](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/)
 
 ## SDK
 
